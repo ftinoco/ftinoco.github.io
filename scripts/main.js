@@ -14,7 +14,7 @@ $(document).ready(function() {
       Subject: $('[name="Subject"]').val(),
       _replyto: $('[name="_replyto"]').val()
     };
-    $.post($(evt.target).attr('action'), JSON.stringify(data) , function(res){
+    $.post($(evt.target).attr('action'), data , function(res){
       if(res === 'sent'){
         Swal.fire({
           icon: 'success',
