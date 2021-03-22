@@ -19,7 +19,7 @@ $(document).ready(function () {
       url: $(evt.target).attr('action'),
       type: 'post',
       data: JSON.stringify(data),
-      dataType: 'json',
+      //dataType: 'json',
       contentType: 'application/json',
       success: function (res) {
         console.log(res);
