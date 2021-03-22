@@ -6,42 +6,63 @@ $(document).ready(function () {
     // uncomment below for on-scroll animations to played only once
     // once: true  
   }); // initialize animate on scroll library
-
-  $('#frmContact').on('submit', function (evt) {
-    evt.preventDefault();
-    let data = {
-      message: $('[name="message"]').val(),
-      name: $('[name="name"]').val(),
-      Subject: $('[name="Subject"]').val(),
-      _replyto: $('[name="_replyto"]').val()
-    };
-    $.ajax({
-      url: $(evt.target).attr('action'),
-      type: 'post',
-      data: JSON.stringify(data),
-      //dataType: 'json',
-      contentType: 'application/json',
-      success: function (res) {
-        console.log(res);
-        if (res === 'sent') {
-          Swal.fire({
-            icon: 'success',
-            title: 'Thanks for contact me...',
-            text: 'Email was sent. I will contact you as soon as possible'
-          });
-        } else {
-          Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Something went wrong!'
-          });
-        }
+ 
+  $('#frmContact').on('submit', function (e) { e.preventDefault(); }); 
+  $('#frmContact').validate({
+    rules: {
+      message: 'required',
+      name: 'required',
+      Subject: 'required',
+      _replyto: 'required'
+    },
+    errorPlacement: function (label, element) {
+      if ($(element).parent().hasClass('input-group')) {
+          label.insertAfter($(element).parent()).addClass('mt-2 invalid-feedback');
+      } else {
+          label.addClass('mt-2 invalid-feedback');
+          label.insertAfter(element);
       }
-    }).fail(function(err) {
-      console.log(err);
-    });
+    },
+    submitHandler: function (form, e) { 
+      if ($(form).valid()) {
+        let data = {
+          message: $('[name="message"]').val(),
+          name: $('[name="name"]').val(),
+          Subject: $('[name="Subject"]').val(),
+          _replyto: $('[name="_replyto"]').val()
+        };
 
+        $.ajax({
+          url: $(evt.target).attr('action'),
+          type: 'post',
+          data: JSON.stringify(data),
+          //dataType: 'json',
+          contentType: 'application/json',
+          success: function (res) {
+            console.log(res);
+            if (res.toLower() === 'sent') {
+              Swal.fire({
+                icon: 'success',
+                title: 'Thanks for contact me...',
+                text: 'Email was sent. I will contact you as soon as possible'
+              });
+            } else {
+              Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Something went wrong!'
+              });
+            }
+          }
+        }).fail(function (err) {
+          console.log(err);
+        });
+      } 
+    }
   });
+
+
+
 
 });
 
