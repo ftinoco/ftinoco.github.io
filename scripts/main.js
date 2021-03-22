@@ -14,24 +14,28 @@ $(document).ready(function() {
       Subject: $('[name="Subject"]').val(),
       _replyto: $('[name="_replyto"]').val()
     };
-    $.post($(evt.target).attr('action'), data , function(res){
-      if(res === 'sent'){
-        Swal.fire({
-          icon: 'success',
-          title: 'Thanks for contact me...',
-          text: 'Email was sent. I will contact you as soon as possible'
-        });
-      } else {
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'Something went wrong!'
-        });
+    $.ajax({
+      url: $(evt.target).attr('action'),
+      type: 'post',
+      data: JSON.stringify(data),
+      dataType: 'json',
+      contentType: 'application/json',
+      success: function (res) {
+        if(res === 'sent'){
+          Swal.fire({
+            icon: 'success',
+            title: 'Thanks for contact me...',
+            text: 'Email was sent. I will contact you as soon as possible'
+          });
+        } else {
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!'
+          });
+        }
       }
-    }).fail((err) =>{
-      console.log(err);
-    });
-  });
+  }); 
 
 });
 
