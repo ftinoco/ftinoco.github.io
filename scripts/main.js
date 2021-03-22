@@ -28,6 +28,8 @@ $(document).ready(function() {
           text: 'Something went wrong!'
         });
       }
+    }).fail((err) =>{
+      console.log(err);
     });
   });
 
