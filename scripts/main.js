@@ -42,8 +42,10 @@ $(document).ready(function () {
             if (res.toLowerCase() === 'sent') {
               Swal.fire({
                 icon: 'success',
-                title: 'Thanks for contact me...',
+                title: 'Thanks for contacting me...',
                 text: 'Email was sent. I will contact you as soon as possible'
+              }).then(() => {
+                $('#frmContact :input').val(null);
               });
             } else {
               Swal.fire({
