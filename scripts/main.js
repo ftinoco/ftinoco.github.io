@@ -9,10 +9,10 @@ $(document).ready(function() {
   $('#frmContact').on('submit', function(evt){
     evt.preventDefault();
     let data = {
-      message = $('[name="message"]').val(),
-      name = $('[name="name"]').val(),
-      Subject = $('[name="Subject"]').val(),
-      _replyto = $('[name="_replyto"]').val()
+      message: $('[name="message"]').val(),
+      name: $('[name="name"]').val(),
+      Subject: $('[name="Subject"]').val(),
+      _replyto: $('[name="_replyto"]').val()
     };
     $.post($(evt.target).attr('action'), JSON.stringify(data) , function(res){
       if(res === 'sent'){
@@ -28,7 +28,7 @@ $(document).ready(function() {
           text: 'Something went wrong!'
         });
       }
-    })
+    });
   });
 
 });
