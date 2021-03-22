@@ -6,6 +6,31 @@ $(document).ready(function() {
     // uncomment below for on-scroll animations to played only once
     // once: true  
   }); // initialize animate on scroll library
+  $('#frmContact').on('submit', function(evt){
+    evt.preventDefault();
+    let data = {
+      message = $('[name="message"]').val(),
+      name = $('[name="name"]').val(),
+      Subject = $('[name="Subject"]').val(),
+      _replyto = $('[name="_replyto"]').val()
+    };
+    $.post($(evt.target).attr('action'), JSON.stringify(data) , function(res){
+      if(res === 'sent'){
+        Swal.fire({
+          icon: 'success',
+          title: 'Thanks for contact me...',
+          text: 'Email was sent. I will contact you as soon as possible'
+        });
+      } else {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Something went wrong!'
+        });
+      }
+    })
+  });
+
 });
 
 // Smooth scroll for links with hashes
