@@ -6,6 +6,7 @@ $(document).ready(function () {
     // uncomment below for on-scroll animations to played only once
     // once: true  
   }); // initialize animate on scroll library
+
   $('#frmContact').on('submit', function (evt) {
     evt.preventDefault();
     let data = {
@@ -19,23 +20,29 @@ $(document).ready(function () {
       type: 'post',
       data: JSON.stringify(data),
       dataType: 'json',
-      contentType: 'application/json'
-    }).complete((res)=>{
-      if (res === 'sent') {
-        Swal.fire({
-          icon: 'success',
-          title: 'Thanks for contact me...',
-          text: 'Email was sent. I will contact you as soon as possible'
-        });
-      } else {
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'Something went wrong!'
-        });
+      contentType: 'application/json',
+      success: function (res) {
+        console.log(res);
+        if (res === 'sent') {
+          Swal.fire({
+            icon: 'success',
+            title: 'Thanks for contact me...',
+            text: 'Email was sent. I will contact you as soon as possible'
+          });
+        } else {
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!'
+          });
+        }
       }
+    }).fail(function(err) {
+      console.log(err);
     });
+
   });
+
 });
 
 // Smooth scroll for links with hashes
