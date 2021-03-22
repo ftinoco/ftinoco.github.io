@@ -33,7 +33,7 @@ $(document).ready(function () {
         };
 
         $.ajax({
-          url: $(evt.target).attr('action'),
+          url: $(form).attr('action'),
           type: 'post',
           data: JSON.stringify(data),
           //dataType: 'json',
@@ -60,10 +60,7 @@ $(document).ready(function () {
       } 
     }
   });
-
-
-
-
+ 
 });
 
 // Smooth scroll for links with hashes
