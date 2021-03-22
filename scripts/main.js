@@ -38,9 +38,8 @@ $(document).ready(function () {
           data: JSON.stringify(data),
           //dataType: 'json',
           contentType: 'application/json',
-          success: function (res) {
-            console.log(res);
-            if (res.toLower() === 'sent') {
+          success: function (res) { 
+            if (res.toLowerCase() === 'sent') {
               Swal.fire({
                 icon: 'success',
                 title: 'Thanks for contact me...',
