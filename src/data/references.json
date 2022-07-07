@@ -4,19 +4,37 @@
             "img": "JR",
             "name": "Jorge Rivera",
             "position": "AWS Certified | Scrum Certified | SQL Server | .NET C# | Consultant",
-            "comments": "<p> Fernando is a dedicated and proactive professional.  During the time we shared in VersaTec, he worked with ASP.NET, C# and SQL Server in different projects, and he proved to improve and grow in knowledge and skills.</p> <p> I have no doubt that any company that decides to acquire his services is winning a great professional who will help it to achieve its goals.</p>"
+            "comments": [
+                {
+                    "description": "Fernando is a dedicated and proactive professional. During the time we shared in VersaTec, he worked with ASP.NET, C# and SQL Server in different projects, and he proved to improve and grow in knowledge and skills."
+                },
+                {
+                    "description": "I have no doubt that any company that decides to acquire his services is winning a great professional who will help it to achieve its goals."
+                }
+            ]
         },
         {
             "img": "WP",
             "name": "William Palacios",
             "position": "Software Engineer at PayPal",
-            "comments": "<p> Fernando is one of the best professionals and .NET developers I have worked with, he has outstanding leadership skills, his passion for excellence and continuous improvement, always lead him to apply the best software development standards and practices.</p><p> I had the pleasure to work with Fernando a few years ago, and I was very impressed with his technical quality and soft skills, definitely a great team player. He has my full confidence and recommendation, I'm sure he will be able to exceed the expectations of any team, and will be a fundamental piece to achieve the goals of any organization.</p>"
+            "comments": [
+                {
+                    "description": "Fernando is one of the best professionals and .NET developers I have worked with, he has outstanding leadership skills, his passion for excellence and continuous improvement, always lead him to apply the best software development standards and practices."
+                },
+                {
+                    "description": "I had the pleasure to work with Fernando a few years ago, and I was very impressed with his technical quality and soft skills, definitely a great team player. He has my full confidence and recommendation, I'm sure he will be able to exceed the expectations of any team, and will be a fundamental piece to achieve the goals of any organization."
+                }
+            ]
         },
         {
             "img": "JG",
             "name": "José Guevara",
             "position": "Data Engineer | Power BI | Sql Server | .NET C# | IT Consultant",
-            "comments": "<p> I have known Fernando for many years, we worked together and I know that he is capable of performing as a developer with knowledge in ASP.NET, C# AND MS SQL Server. He is a proactive and professional person.</p>"
+            "comments": [
+                {
+                    "description": "I have known Fernando for many years, we worked together and I know that he is capable of performing as a developer with knowledge in ASP.NET, C# AND MS SQL Server. He is a proactive and professional person."
+                }
+            ]
         }
     ]
 }
