@@ -1,43 +1,791 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html lang="en-US">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fernando Tinoco</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet"> 
+    <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/main.css?ver=1.1.0" rel="stylesheet">
+    <noscript>
+        <style type="text/css">
+            [data-aos] {
+                opacity: 1 !important;
+                transform: translate(0) scale(1) !important;
+            }
+        </style>
+    </noscript>
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body id="top">
+    <header>
+        <div class="profile-page sidebar-collapse">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
+                <div class="container">
+                    <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">Fernando Tinoco</a>
+                        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navigation" aria-controls="navigation" aria-expanded="false"
+                            aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span
+                                class="navbar-toggler-bar bar2"></span><span
+                                class="navbar-toggler-bar bar3"></span></button>
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="page-content">
+        <div>
+            <div class="profile-page">
+                <div class="wrapper">
+                    <div class="page-header page-header-small" filter-color="green">
+                        <div class="page-header-image" data-parallax="true"
+                            style="background-image: url('images/cc-bg-1.jpg')"></div>
+                        <div class="container">
+                            <div class="content-center">
+                                <div class="cc-profile-image"><a href="#"><img src="images/profile.jpg"
+                                            alt="Image" /></a></div>
+                                <div class="h2 title">Fernando Tinoco</div>
+                                <p class="category text-white">Software Developer, Programmer Analyst</p>
+                                <a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in"
+                                    data-aos-anchor="data-aos-anchor">Hire Me</a>
+                                <a class="btn btn-primary" href="/Resume.pdf" target="_blank" data-aos="zoom-in"
+                                    data-aos-anchor="data-aos-anchor">Download CV</a>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="container">
+                                <div class="button-container">
+                                    <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank" href="https://www.linkedin.com/in/ftinococ45" rel="tooltip" title="Connect with me on Linkedin">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                    <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank" href="https://github.com/ftinoco" rel="tooltip" title="Follow me on Github">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                    <!--<a class="btn btn-default btn-round btn-lg btn-icon" target="_blank" href="https://www.instagram.com/ftinococ.45/" rel="tooltip" title="Follow me on Instagram">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>-->                                        
+                                    <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank" href="skype:ftinococ.45" rel="tooltip" title="Contact me on Skype">
+                                        <i class="fa fa-skype"></i>
+                                    </a>
+                                    <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank" href="https://t.me/ftinococ45" rel="tooltip" title="Contact me on Telegram">
+                                        <i class="fa fa-telegram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="about">
+                <div class="container">
+                    <div class="card" data-aos="fade-up" data-aos-offset="10">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="card-body">
+                                    <div class="h4 mt-0 title">About</div>
+                                    <p>Hi there!</p>
+                                    <p> 
+                                        I am a Nicaraguan that love enjoying a good coffee, watching movies, series and anime. 
+                                        I love my country and I hope one day to know it completely.
+                                    </p>
+                                    <p>
+                                        About my technical skills, I would say that I am a tech enthusiast, I am always looking for what to learn. 
+                                        I have worked on many platforms and programming languages, but my strong point is
+                                        web develop and .NET technologies, I have been part of both back-end and front-end. 
+                                        I am currently focused on learning Python and ReactJS.
+                                    </p>
+                                    <p>I have always thought that if you do what you like the most, you will never work.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="card-body">
+                                    <div class="h4 mt-0 title">Basic Information</div>
+                                    <div class="row">
+                                        <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
+                                        <div class="col-sm-8">29</div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
+                                        <div class="col-sm-8"><a
+                                                href="mailto:ftinococ.45@gmail.com">ftinococ.45@gmail.com</a></div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
+                                        <div class="col-sm-8">(+505) 8994-7284</div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
+                                        <div class="col-sm-8">Managua, Nicaragua</div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
+                                        <div class="col-sm-8">Spanish, English</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="skill">
+                <div class="container">
+                    <div class="h4 text-center mb-4 title">Professional Skills</div>
+                    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="progress-container progress-primary"><span
+                                            class="progress-badge">C#</span>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full"
+                                                data-aos-offset="10" data-aos-duration="2000" role="progressbar"
+                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 90%;"></div>
+                                            <span class="progress-value">90%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="progress-container progress-primary"><span class="progress-badge">SQL
+                                            Server</span>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full"
+                                                data-aos-offset="10" data-aos-duration="2000" role="progressbar"
+                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 80%;"></div>
+                                            <span class="progress-value">80%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="progress-container progress-primary"><span
+                                            class="progress-badge">ASP.NET / ASP.NET Core</span>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full"
+                                                data-aos-offset="10" data-aos-duration="2000" role="progressbar"
+                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 80%;"></div>
+                                            <span class="progress-value">80%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="progress-container progress-primary"><span
+                                            class="progress-badge">Oracle</span>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full"
+                                                data-aos-offset="10" data-aos-duration="2000" role="progressbar"
+                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 60%;"></div>
+                                            <span class="progress-value">60%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="progress-container progress-primary"><span
+                                            class="progress-badge">Git</span>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full"
+                                                data-aos-offset="10" data-aos-duration="2000" role="progressbar"
+                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 80%;"></div>
+                                            <span class="progress-value">80%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="progress-container progress-primary"><span class="progress-badge">Azure
+                                            DevOps</span>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full"
+                                                data-aos-offset="10" data-aos-duration="2000" role="progressbar"
+                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 70%;"></div>
+                                            <span class="progress-value">70%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="progress-container progress-primary"><span
+                                            class="progress-badge">Javascript</span>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full"
+                                                data-aos-offset="10" data-aos-duration="2000" role="progressbar"
+                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 75%;"></div>
+                                            <span class="progress-value">75%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="progress-container progress-primary"><span
+                                            class="progress-badge">BOOTSTRAP</span>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full"
+                                                data-aos-offset="10" data-aos-duration="2000" role="progressbar"
+                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 75%;"></div>
+                                            <span class="progress-value">75%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="progress-container progress-primary"><span
+                                            class="progress-badge">Angular +2 </span>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full"
+                                                data-aos-offset="10" data-aos-duration="2000" role="progressbar"
+                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 70%;"></div>
+                                            <span class="progress-value">70%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="progress-container progress-primary"><span
+                                            class="progress-badge">JQuery</span>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full"
+                                                data-aos-offset="10" data-aos-duration="2000" role="progressbar"
+                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 90%;"></div>
+                                            <span class="progress-value">90%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 ml-auto mr-auto">
+                            <div class="h4 text-center mb-4 title">Portfolio</div>
+                            <div class="nav-align-center">
+                                <ul class="nav nav-pills nav-pills-primary" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#web-development" role="tablist">
+                                            <i class="fa fa-laptop" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <!--  <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#graphic-design" role="tablist">
+                                            <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#Photography" role="tablist">
+                                            <i class="fa fa-camera" aria-hidden="true"></i>
+                                        </a>
+                                    </li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content gallery mt-5">
+                        <div class="tab-pane active" id="web-development">
+                            <div class="ml-auto mr-auto">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#web-development">
+                                                <figure class="cc-effect"><img src="images/project-3.jpg" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Account Receivable and Invoice Order Project </div>
+                                                        <p>Web Development</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#web-development">
+                                                <figure class="cc-effect"><img src="images/project-2.jpg" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4"></div>
+                                                        <p>Web Development</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#web-development">
+                                                <figure class="cc-effect"><img src="images/project-1.jpg" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Vehicle Fleet Control System</div>
+                                                        <p>Web Development</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#web-development">
+                                                <figure class="cc-effect"><img src="images/project-4.jpg" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Web Advertising Project</div>
+                                                        <p>Web Development</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!--     <div class="tab-pane" id="graphic-design" role="tabpanel">
+                            <div class="ml-auto mr-auto">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                            data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
+                                                <figure class="cc-effect"><img src="images/graphic-design-1.jpg"
+                                                        alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Triangle Pattern</div>
+                                                        <p>Graphic Design</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a></div>
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                            data-aos-anchor-placement="top-bottom">
+                                            <a href="#graphic-design">
+                                                <figure class="cc-effect"><img src="images/graphic-design-2.jpg"
+                                                        alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Abstract Umbrella</div>
+                                                        <p>Graphic Design</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                            data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
+                                                <figure class="cc-effect"><img src="images/graphic-design-3.jpg"
+                                                        alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Cube Surface Texture</div>
+                                                        <p>Graphic Design</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a></div>
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                            data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
+                                                <figure class="cc-effect"><img src="images/graphic-design-4.jpg"
+                                                        alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Abstract Line</div>
+                                                        <p>Graphic Design</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="tab-pane" id="Photography" role="tabpanel">
+                            <div class="ml-auto mr-auto">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                            data-aos-anchor-placement="top-bottom"><a href="#Photography">
+                                                <figure class="cc-effect"><img src="images/photography-1.jpg"
+                                                        alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Photoshoot</div>
+                                                        <p>Photography</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a></div>
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                            data-aos-anchor-placement="top-bottom"><a href="#Photography">
+                                                <figure class="cc-effect"><img src="images/photography-3.jpg"
+                                                        alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Wedding Photoshoot</div>
+                                                        <p>Photography</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                            data-aos-anchor-placement="top-bottom"><a href="#Photography">
+                                                <figure class="cc-effect"><img src="images/photography-2.jpg"
+                                                        alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Beach Photoshoot</div>
+                                                        <p>Photography</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a></div>
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                            data-aos-anchor-placement="top-bottom"><a href="#Photography">
+                                                <figure class="cc-effect"><img src="images/photography-4.jpg"
+                                                        alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Nature Photoshoot</div>
+                                                        <p>Photography</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="experience">
+                <div class="container cc-experience">
+                    <div class="h4 text-center mb-4 title">Work Experience</div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
+                                data-aos-duration="500">
+                                <div class="card-body cc-experience-header">
+                                    <p>Octuber 2019 - Present</p>
+                                    <div class="h5">Consulting group</div>
+                                </div>
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h5">Development Engineer Consultant</div>
+                                    <p>Great place to work. </p>
+                                    <p>Currently I am working here, it is 100% remote job. My main functions there are
+                                        develop business solutions for our clients in throughout Central American
+                                        region.</p>
+                                    <p>Among my greatest achievements in the company is the development and
+                                        implementation of cost-effectiveness calculation processes for Central American
+                                        Integration Bank (BCIE) in technologies such as Oracle, DevExtreme, C# and
+                                        ASP.NET MVC 5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
+                                data-aos-duration="500">
+                                <div class="card-body cc-experience-header">
+                                    <p>March 2016 - September 2019</p>
+                                    <div class="h5">Xolo S.A</div>
+                                </div>
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h5">Programmer Analyst</div>
+                                    <p>The place where I got most of my professional experience.</p>
+                                    <p>I worked here around 4 years, in that time I performed as a programmer analyst
+                                        where my duties were develop, test and implement business sofware solutions for
+                                        many companies in Nicaragua, both private and public sectors.</p>
+                                    <p>Among my outstanding performance, I can highlight development of the Agricultural
+                                        Quarentine System for Institute for Agricultural Protection and Health (IPSA),
+                                        this project was my most important development in the company because it had a
+                                        great impact on the control of import and export of agricultural products in the
+                                        country, optimizing and improving this process. For this project we use
+                                        technologies such as ASP.NET MVC 5, MSSQL Server, ASP.NET Web Api.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
+                                data-aos-duration="500">
+                                <div class="card-body cc-experience-header">
+                                    <p>Octuber 2013 - July 2015</p>
+                                    <div class="h5">Versatec</div>
+                                </div>
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h5">Technical Developer I</div>
+                                    <p>My beginnings.</p>
+                                    <p>In this company I started my career as a software developer, here I was given the
+                                        opportunity to show my skills when I was still a university student. Here I was
+                                        part of many projects based on the .NET platform</p>
+                                    <p>I worked on vehicle fleet control system, generic reporting application based on
+                                        Devexpress suite, but my most important participation was in development of
+                                        payroll system for a company that provided the payroll control as service in
+                                        Panama, for this development was used Devexpress suite, C#, MSSQL Server and
+                                        ASP.NET Webform </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="container cc-education">
+                    <div class="h4 text-center mb-4 title">Education</div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
+                                data-aos-duration="500">
+                                <div class="card-body cc-education-header">
+                                    <p>2020 - 2020</p>
+                                    <div class="h5">Microsoft Certification</div>
+                                </div>
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h5">MCSA: Web Applications</div>
+                                    <p class="category">Microsoft</p>
+                                    <p>I was certified as MCSA: Web Applications, passing the following exams:
+                                    <ul>
+                                        <li>70-480: Programming in HTML5 with JavaScript and CSS3 </li>
+                                        <li>70-486: Developing ASP.NET MVC Web Applications.</li>
+                                    </ul>
+                                    <a href="https://www.youracclaim.com/badges/723ae1c2-68c9-4c8b-8153-5d8717769fa0?source=linked_in_profile"
+                                        target="_blank">See credetials</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
+                                data-aos-duration="500">
+                                <div class="card-body cc-education-header">
+                                    <p>2010 - 2015</p>
+                                    <div class="h5">Bachelor's Degree</div>
+                                </div>
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h5">Computing Engineer</div>
+                                    <p class="category">National Engineering University</p>
+                                    <p>I graduated as a Computing Engineer from the National Engineering University of
+                                        Nicaragua.
+                                        Here I learned about programming bases, algorithms, data structure and other
+                                        topics that allowed me to developed part of my logic programming which in turn
+                                        allowed me start my carreer and work as a Software Developer.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
+                                data-aos-duration="500">
+                                <div class="card-body cc-education-header">
+                                    <p>2004 - 2008</p>
+                                    <div class="h5">High School</div>
+                                </div>
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h5">Science and Letters</div>
+                                    <p class="category">National Institute Modesto Armijo Lozano</p>
+                                    <p>Here I completed my high school stage, this institute is one of the best public
+                                        institues on Nicaragua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="reference">
+                <div class="container cc-reference">
+                    <div class="h4 mb-4 text-center title">References</div>
+                    <div class="card" data-aos="zoom-in">
+                        <div class="carousel slide" id="cc-Indicators" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li class="active" data-target="#cc-Indicators" data-slide-to="0"></li>
+                                <li data-target="#cc-Indicators" data-slide-to="1"></li>
+                                <li data-target="#cc-Indicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-3 cc-reference-header">
+                                            <div class="avatar">
+                                                <div class="avatar__letters">JR</div>
+                                            </div>
+                                            <div class="h5 pt-2">Jorge Rivera</div>
+                                            <p class="category">AWS Certified | Scrum Certified | SQL Server | .NET C# | Consultant</p>
+                                        </div>
+                                        <div class="col-lg-10 col-md-9">
+                                            <p> Fernando is a dedicated and proactive professional.  During the time we shared in VersaTec, he worked with ASP.NET, C# and SQL Server in different projects, and he proved to improve and grow in knowledge and skills.</p>
+                                            <p> I have no doubt that any company that decides to acquire his services is winning a great professional who will help it to achieve its goals.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-3 cc-reference-header">
+                                            <div class="avatar">
+                                                <div class="avatar__letters">WP</div>
+                                            </div>
+                                            <div class="h5 pt-2">William Palacios</div>
+                                            <p class="category">Software Engineer at PayPal</p>
+                                        </div>
+                                        <div class="col-lg-10 col-md-9">
+                                            <p> Fernando is one of the best professionals and .NET developers I have worked with, he has outstanding leadership skills, his passion for excellence and continuous improvement, always lead him to apply the best software development standards and practices.</p>
+                                            <p> I had the pleasure to work with Fernando a few years ago, and I was very impressed with his technical quality and soft skills, definitely a great team player. He has my full confidence and recommendation, I'm sure he will be able to exceed the expectations of any team, and will be a fundamental piece to achieve the goals of any organization.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-3 cc-reference-header">
+                                            <div class="avatar">
+                                                <div class="avatar__letters">JG</div>
+                                            </div>
+                                            <div class="h5 pt-2">José Guevara</div>
+                                            <p class="category">Data Engineer | Power BI | Sql Server | .NET C# | IT Consultant</p>
+                                        </div>
+                                        <div class="col-lg-10 col-md-9">
+                                            <p> I have known Fernando for many years, we worked together and I know that he is capable of performing as a developer with knowledge in ASP.NET, C# AND MS SQL Server. He is a proactive and professional person.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="contact">
+                <div class="cc-contact-information"
+                    style="background-image: url('images/staticmap.png'); background-repeat: no-repeat; background-size: cover;">
+                    <div class="container">
+                        <div class="cc-contact">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="card mb-0" data-aos="zoom-in">
+                                        <div class="h4 text-center title">Contact Me</div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="card-body">
+                                                    <form action="https://flask-email.herokuapp.com/sendEmail"
+                                                        autocomplete="off" method="POST" id="frmContact">
+                                                        <div class="p pb-3"><strong>Feel free to contact me </strong>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col">
+                                                                <div class="input-group">
+                                                                    <span class="input-group-addon">
+                                                                        <i class="fa fa-user-circle"></i>
+                                                                    </span>
+                                                                    <input class="form-control" type="text" name="name" placeholder="Name" required="required" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col">
+                                                                <div class="input-group">
+                                                                    <span class="input-group-addon">
+                                                                        <i class="fa fa-file-text"></i>
+                                                                    </span>
+                                                                    <input class="form-control" type="text" name="Subject" placeholder="Subject" required="required" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col">
+                                                                <div class="input-group">
+                                                                    <span class="input-group-addon">
+                                                                        <i class="fa fa-envelope"></i>
+                                                                    </span>
+                                                                    <input class="form-control" type="email" name="_replyto" placeholder="E-mail" required="required" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <textarea class="form-control" name="message" placeholder="Your Message" required="required" maxlength="500"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <button class="btn btn-primary" type="submit">Send</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="card-body">
+                                                    <p class="mb-0"><strong>Address </strong></p>
+                                                    <p class="pb-2">Managua, Nicaragua</p>
+                                                    <p class="mb-0"><strong>Phone</strong></p>
+                                                    <p class="pb-2">(+505) 8994-7284</p>
+                                                    <p class="mb-0"><strong>Email</strong></p>
+                                                    <p>ftinococ.45@gmail.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container text-center"> 
+            <a class="cc-linkedin btn btn-link" target="_blank" href="https://www.linkedin.com/in/ftinococ45">
+                <i class="fa fa-linkedin fa-2x " aria-hidden="true"></i>
+            </a>
+            <a class="cc-twitter btn btn-link" target="_blank" href="https://github.com/ftinoco">
+                <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            </a>
+            <!--<a class="cc-instagram btn btn-link" target="_blank" href="https://www.instagram.com/ftinococ.45/">
+                <i class="fa fa-instagram fa-2x " aria-hidden="true"></i>
+            </a>-->
+            <a class="cc-skype btn btn-link" target="_blank" href="skype:ftinococ.45">
+                <i class="fa fa-skype fa-2x " aria-hidden="true"></i>
+            </a>
+            <a class="cc-telegram btn btn-link" target="_blank" href="https://t.me/ftinococ45">
+                <i class="fa fa-telegram fa-2x " aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="h4 title text-center">Fernando Tinoco</div>
+        <!--<div class="text-center text-muted">
+        <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
+      </div>-->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.6/dist/sweetalert2.all.min.js"></script>
+    <script src="js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="js/core/popper.min.js?ver=1.1.0"></script>
+    <script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
+    <script src="js/now-ui-kit.js?ver=1.1.0"></script>
+    <script src="js/aos.js?ver=1.1.0"></script>
+    <script src="scripts/main.js?ver=1.1.0"></script> 
+	    <div id="root"></div>
+</body>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
 </html>
