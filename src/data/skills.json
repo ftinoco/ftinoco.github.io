@@ -1,42 +1,42 @@
 [
     {
         "name": "C#",
-        "percentage": "90%"
+        "percentage": 90
     },
     {
         "name": "ASP.NET / ASP.NET CORE",
-        "percentage": "80%"
+        "percentage": 80
     },
     {
         "name": "Git",
-        "percentage": "80%"
+        "percentage": 80
     },
     {
         "name": "Javascript",
-        "percentage": "75%"
+        "percentage": 75
     },
     {
         "name": "Oracle",
-        "percentage": "60%"
+        "percentage": 60
     },
     {
         "name": "Azure DevOps",
-        "percentage": "60%"
+        "percentage": 60
     },
     {
         "name": "jQuery",
-        "percentage": "90%"
+        "percentage": 90
     },
     {
         "name": "Boostrap",
-        "percentage": "80%"
+        "percentage": 80
     },
     {
         "name": "SQL Server",
-        "percentage": "80%"
+        "percentage": 80
     },
     {
         "name": "React",
-        "percentage": "40%"
+        "percentage": 40
     }
 ]
