@@ -25,10 +25,10 @@ export interface IContact {
 export interface IPortfolio {
     profile: IProfile;
     socialMedia: ISocialMedia[];
-    skills: ISkill[];
-    projects: IProject[];
-    workExperience: IWorkExperience[];
-    educationData: IEducation[];
-    references: IReference[];
-    contact: IContact;
+    skills?: ISkill[];
+    projects?: IProject[];
+    workExperience?: IWorkExperience[];
+    educationData?: IEducation[];
+    references?: IReference[];
+    contact?: IContact;
 }

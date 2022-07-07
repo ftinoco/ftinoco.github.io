@@ -1,4 +1,10 @@
-import { IAbout } from "../../utils/interfaces/interfaces";
+import { IAbout, ISocialMedia } from "../../utils/interfaces/interfaces";
+
+export interface IProfileProps{
+    fullName: string;
+    profile:IProfile;
+    socialMedias: ISocialMedia[];
+}
 
 export interface IProfile {
     firstName: string;
@@ -6,14 +12,15 @@ export interface IProfile {
     profession: string;
     position: string;
     age: number;
-    email: {
+    emails: {
         main: string;
         secundary: string;
     }
     phone: string;
-    adress: string;
+    address: string;
     languages: ILanguage[];
-    about: IAbout[]
+    about: IAbout[];
+    profileImage: string;
 }
 
 export interface ILanguage {

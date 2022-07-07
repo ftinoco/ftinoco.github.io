@@ -10,9 +10,9 @@ export const defaultValues: IPortfolio = {
     educationData: [],
     profile: {
         about: [],
-        adress: '',
+        address: '',
         age: 30,
-        email: {
+        emails: {
             main: '',
             secundary: ''
         },
@@ -26,7 +26,8 @@ export const defaultValues: IPortfolio = {
         lastName: '',
         phone: '',
         position: '',
-        profession: ''
+        profession: '',
+        profileImage: ''
     },
     projects: [],
     references: [],

@@ -7,14 +7,35 @@ import { WorkExperience } from './components/work-experiences';
 import { Education } from './components/education';
 import { Contact } from './components/contact';
 import { Reference } from './components/references';
+import { useObservableState, useSubscription } from 'observable-hooks';
+import { IPortfolio } from './utils/interfaces/interfaces';
+import { getPorfolioData$, portfolioData$ } from './services/profile-service';
+import { defaultValues } from './utils/consts/portfolio';
+import { useEffect, useState } from 'react';
 
-export const App = () => { 
+export const App = () => {
+  const [fullName, setFullName] = useState('');
+
+  const portfolioData = useObservableState<IPortfolio>(
+    portfolioData$, defaultValues
+  );
+
+  useSubscription(getPorfolioData$, (p) => { portfolioData$.next(p) });
+
+  useEffect(() => {
+    setFullName(
+      portfolioData.profile.firstName.concat(' ')
+        .concat(portfolioData.profile.lastName));
+  }, [portfolioData])
+
   return (
     <>
-      <Header></Header>
+      <Header fullName={fullName} />
       <div className="page-content">
         <div>
-          <Profile></Profile>
+          <Profile fullName={fullName}
+            profile={portfolioData.profile}
+            socialMedias={portfolioData.socialMedia} />
           <Skill></Skill>
           <Project></Project>
           <WorkExperience></WorkExperience>
@@ -23,7 +44,8 @@ export const App = () => {
           <Contact></Contact>
         </div>
       </div>
-      <Footer></Footer>
+      <Footer fullName={fullName}
+        socialMedias={portfolioData.socialMedia} />
     </>
   );
 };

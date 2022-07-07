@@ -9,7 +9,7 @@
         "secundary": "fernandotinoco_45@hotmail.com"
     },
     "phone": "(+505) 8994-7284",
-    "adress": "Managua, Nicaragua",
+    "address": "Managua, Nicaragua",
     "languages": [
         {
             "name": "Spanish",
@@ -33,5 +33,6 @@
         {
             "description": "I have always thought that if you do what you like the most, you will never work."
         }
-    ]
+    ],
+    "profileImage":"images/profile.jpg"
 }
