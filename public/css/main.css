@@ -6818,6 +6818,9 @@ Created using IcoMoon - icomoon.io
   color: #fff;
   text-transform: uppercase;
 }
+.cc-experience .cc-experience-header a{
+  color: #fff;
+}
 
 /* Education Style */
 .cc-education .h5 {
