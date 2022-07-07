@@ -15,7 +15,7 @@ export const Skill = () => {
                         {skills.map((skill, idx, $skills) =>
                         (
                             ((idx % 2) === 0) &&
-                            <div className="row">
+                            <div key={idx} className="row">
                                 <div className="col-md-6">
                                     <div className="progress-container progress-primary">
                                         <span className="progress-badge">{skill.name}</span>
