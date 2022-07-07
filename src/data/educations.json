@@ -1,0 +1,22 @@
+{
+    "educations": [
+        {
+            "title": "MCSA: Web Applications",
+            "institution": "Microsoft",
+            "startDate": 2020,
+            "endDate": 2020,
+            "degree": "Microsoft Certification",
+            "description": "<p>I was certified as MCSA: Web Applications, passing the following exams: <ul> <li>70-480: Programming in HTML5 with JavaScript and CSS3 </li> <li>70-486: Developing ASP.NET MVC Web Applications.</li> </ul>",
+            "credentials": "https://www.youracclaim.com/badges/723ae1c2-68c9-4c8b-8153-5d8717769fa0?source=linked_in_profile"
+        },
+        {
+            "title": "Computing Engineer",
+            "institution": "Universidad Nacional de Ingeniería",
+            "startDate": 2010,
+            "endDate": 2015,
+            "degree": "Bachelor's Degree",
+            "description": "<p>I graduated as a Computing Engineer from the National Engineering University of Nicaragua. Here I learned about programming bases, algorithms, data structure and other topics that allowed me to developed part of my logic programming which in turn allowed me start my carreer and work as a Software Developer. </p>",
+            "credentials": ""
+        }
+    ]
+}

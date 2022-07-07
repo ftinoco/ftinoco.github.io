@@ -1,0 +1,25 @@
+{
+    "personalData": {
+        "firstName": "Fernando",
+        "lastName": "Tinoco",
+        "profession": "Computer Engineer",
+        "position": "Software Developer",
+        "age": 30,
+        "emails": {
+            "main": "ftinococ.45@gmail.com",
+            "secundary": "fernandotinoco_45@hotmail.com"
+        },
+        "phone": "(+505) 8994-7284",
+        "adress": "Managua, Nicaragua",
+        "languages": [
+            {
+                "lenguage": "Spanish",
+                "level": "native"
+            },
+            {
+                "lenguage": "English",
+                "level": "B2"
+            }
+        ]
+    }
+}

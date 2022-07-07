@@ -1,0 +1,24 @@
+{
+    "socialMedia": [
+        {
+            "icon": "fa-linkedin",
+            "link": "https://www.linkedin.com/in/ftinococ45",
+            "Title": "Connect with me on Linkedin"
+        },
+        {
+            "icon": "fa-github",
+            "link": "https://github.com/ftinoco",
+            "Title": "Follow me on Github"
+        },
+        {
+            "icon": "fa-skype",
+            "link": "skype:ftinococ.45",
+            "Title": "Connect with me on Skype"
+        },
+        {
+            "icon": "fa-telegram",
+            "link": "https://t.me/ftinococ45",
+            "Title": "Connect with me on Telegram"
+        }
+    ]
+}
