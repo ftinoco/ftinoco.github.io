@@ -7,7 +7,7 @@ export const defaultValues: IPortfolio = {
         replayTo: '',
         subject: ''
     },
-    educations: [],
+    educationData: [],
     profile: {
         about: [],
         adress: '',

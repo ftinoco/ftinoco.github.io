@@ -5,5 +5,5 @@ export interface IEducation {
     endDate: number;
     degree: string;
     description: string;
-    credentials: string;
+    credentials?: string;
 }

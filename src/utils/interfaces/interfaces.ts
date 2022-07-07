@@ -28,7 +28,7 @@ export interface IPortfolio {
     skills: ISkill[];
     projects: IProject[];
     workExperience: IWorkExperience[];
-    educations: IEducation[];
+    educationData: IEducation[];
     references: IReference[];
     contact: IContact;
 }
