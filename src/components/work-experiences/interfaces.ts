@@ -1,4 +1,4 @@
-import { IAbout } from "../../interfaces";
+import { IAbout } from "../../utils/interfaces/interfaces";
 
 export interface IWorkExperienceProps {
     data: IWorkExperience[];

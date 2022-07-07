@@ -1,28 +1,26 @@
-{
-    "projects": [
-        {
-            "title": "Account Receivable and Invoice Order Project",
-            "img": "images/project-3.jpg",
-            "role": "Web Development",
-            "url": "#web-development"
-        },
-        {
-            "title": "",
-            "img": "images/project-2.jpg",
-            "role": "Web Development",
-            "url": "#web-development"
-        },
-        {
-            "title": "Vehicle Fleet Control System",
-            "img": "images/project-1.jpg",
-            "role": "Web Development",
-            "url": "#web-development"
-        },
-        {
-            "img": "images/project-4.jpg",
-            "title": "Web Advertising Project",
-            "role": "Web Development",
-            "url": "#web-development"
-        }
-    ]
-}
+[
+    {
+        "title": "Account Receivable and Invoice Order Project",
+        "img": "images/project-3.jpg",
+        "role": "Web Development",
+        "url": "#web-development"
+    },
+    {
+        "title": "",
+        "img": "images/project-2.jpg",
+        "role": "Web Development",
+        "url": "#web-development"
+    },
+    {
+        "title": "Vehicle Fleet Control System",
+        "img": "images/project-1.jpg",
+        "role": "Web Development",
+        "url": "#web-development"
+    },
+    {
+        "img": "images/project-4.jpg",
+        "title": "Web Advertising Project",
+        "role": "Web Development",
+        "url": "#web-development"
+    }
+]
