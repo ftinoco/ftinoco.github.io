@@ -3351,6 +3351,14 @@
     padding-bottom: 0.5rem;
     line-height: 1.625rem;
   }
+  button.navbar-brand{
+    border: none;
+    color: #fff;
+    background: transparent;
+  }
+  button.navbar-brand:focus{
+    outline: none;
+  }
   .navbar .navbar-toggler {
     width: 37px;
     height: 27px;
