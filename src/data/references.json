@@ -1,6 +1,7 @@
 [
     {
         "img": "JR",
+        "isImg": false,
         "name": "Jorge Rivera",
         "position": "AWS Certified | Scrum Certified | SQL Server | .NET C# | Consultant",
         "comments": [
@@ -14,6 +15,7 @@
     },
     {
         "img": "WP",
+        "isImg": false,
         "name": "William Palacios",
         "position": "Software Engineer at PayPal",
         "comments": [
@@ -24,14 +26,18 @@
                 "description": "I had the pleasure to work with Fernando a few years ago, and I was very impressed with his technical quality and soft skills, definitely a great team player. He has my full confidence and recommendation, I'm sure he will be able to exceed the expectations of any team, and will be a fundamental piece to achieve the goals of any organization."
             }
         ]
-    },
+    }, 
     {
-        "img": "JG",
-        "name": "José Guevara",
-        "position": "Data Engineer | Power BI | Sql Server | .NET C# | IT Consultant",
+        "img": "images/reference-image-1.jpg",
+        "isImg": true,
+        "name": "Luis Fernández",
+        "position": "Chief Technology Officer & Co-Founder en UNLIMITED PGASUS S.A. DE C.V.",
         "comments": [
             {
-                "description": "I have known Fernando for many years, we worked together and I know that he is capable of performing as a developer with knowledge in ASP.NET, C# AND MS SQL Server. He is a proactive and professional person."
+                "description": "Fernando is a developer of great technical capacity, attentive to details and above all careful to always deliver products that follow the best development practices, quality standards and testing."
+            },
+            {
+                "description": "He is very focused on delivering his activities as soon as possible and is attentive to his colleagues in order to overcome project problems as a team."
             }
         ]
     }

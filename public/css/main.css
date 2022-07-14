@@ -6839,9 +6839,15 @@
     padding: 40px;
   }
   
+  .cc-reference .cc-reference-header {
+    text-align: center;
+  }
+  
   .cc-reference img {
     height: 120px;
-    width: auto;
+    width: 120px;
+    max-width: none;
+    border-radius: 50%;
   }
   
   .cc-reference .h5 {
@@ -6861,9 +6867,6 @@
   }
   
   @media (max-width: 768px) {
-    .cc-reference .cc-reference-header {
-      text-align: center;
-    }
     .cc-reference .carousel-indicators {
       bottom: 0px;
     }

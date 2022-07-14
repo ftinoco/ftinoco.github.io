@@ -33,20 +33,30 @@ export const Reference = () => {
                                 references.map((reference, idx) =>
                                     <div key={idx} className={`carousel-item ${getActiveClass(idx)}`}>
                                         <div className="row">
-                                            <div className="col-lg-2 col-md-3 cc-reference-header">
+                                            <div className="col-lg-3 col-md-4 cc-reference-header">
                                                 <div className="avatar">
-                                                    <div className="avatar__letters">{reference.img}</div>
+                                                    {reference.isImg ? (
+                                                        <>
+                                                            <div className="avatar__letters">
+                                                                <img src={reference.img} />
+                                                            </div>
+                                                        </>
+                                                    ) : (
+                                                        <>
+                                                            <div className="avatar__letters">{reference.img}</div>
+                                                        </>
+                                                    )}
                                                 </div>
                                                 <div className="h5 pt-2">{reference.name}</div>
-                                                <p className="category">{reference.position}</p>                                                
+                                                <p className="category">{reference.position}</p>
                                             </div>
-                                            <div className="col-lg-10 col-md-9">
+                                            <div className="col-lg-9 col-md-8">
                                                 {reference.comments.map((comment, i) => <p key={i}>{comment.description}</p>)}
                                             </div>
                                         </div>
-                                    </div> 
-                                ) 
-                            } 
+                                    </div>
+                                )
+                            }
                         </div>
                     </div>
                 </div>
