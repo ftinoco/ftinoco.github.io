@@ -9,7 +9,7 @@ export const Profile: FC<IProfileProps> = ({ fullName, profile, socialMedias }) 
                 <div className="wrapper">
                     <div className="page-header page-header-small" filter-color="green">
                         <div className="page-header-image" data-parallax="true"
-                            style={{ backgroundImage: "url('images/cc-bg-1.jpg')" }}></div>
+                            style={{ backgroundImage: "url('images/cc-bg-2.jpg')" }}></div>
                         <div className="container">
                             <div className="content-center">
                                 <div className="cc-profile-image">
