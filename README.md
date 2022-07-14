@@ -10,6 +10,7 @@ To send email from contact section, this site uses a service hosted on heroku, a
 - [ ] Update experience section
 - [ ] Add unit testing
 - [ ] Implement services to cosume porfolio info
+- [ ] Open education credentials in other tab
 
 ### Credits
 - Portfolio based on [templateflip](https://templateflip.com).
