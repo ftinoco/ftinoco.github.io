@@ -1,0 +1,38 @@
+{
+    "firstName": "Fernando",
+    "lastName": "Tinoco",
+    "profession": "Computer Engineer",
+    "position": "Software Developer",
+    "age": 30,
+    "emails": {
+        "main": "ftinococ.45@gmail.com",
+        "secundary": "fernandotinoco_45@hotmail.com"
+    },
+    "phone": "(+505) 8994-7284",
+    "address": "Managua, Nicaragua",
+    "languages": [
+        {
+            "name": "Spanish",
+            "level": "native"
+        },
+        {
+            "name": "English",
+            "level": "B2"
+        }
+    ],
+    "about": [
+        {
+            "description": "Hi there!"
+        },
+        {
+            "description": "I am a Nicaraguan that love enjoying a good coffee, watching movies, series and anime. I love my country and I hope one day to know it completely."
+        },
+        {
+            "description": "About my technical skills, I would say that I am a tech enthusiast, I am always looking for what to learn. I have worked on many platforms and programming languages, but my strong point is web develop and .NET technologies, I have been part of both back-end and front-end. I am currently focused on learning Python and ReactJS."
+        },
+        {
+            "description": "I have always thought that if you do what you like the most, you will never work."
+        }
+    ],
+    "profileImage":"images/profile.jpg"
+}
