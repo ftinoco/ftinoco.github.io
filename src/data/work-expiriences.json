@@ -1,5 +1,33 @@
 [
     {
+        "company": "Saongroup / Stepstone",
+        "role": ".NET Developer",
+        "startDate": "August 2021",
+        "endDate": "Current",
+        "about": [
+            { 
+                "description": "My first job where I work alongside european people." 
+            },
+            {
+                "description": "Currently I am working here, the experience in the company has been great as allows me learn about new technologies such as react. In addition, it allows me interact with irish, polish and salvadorean colleague."
+            }, 
+            {
+                "description": "My main responsabilities here is develop and maintenence of existing job sites. But currently I working on a project react and its ecosystem, developing unit testing for react components."
+            } 
+        ],
+        "url": "https://www.stepstone.com/en/",
+        "stack": [ 
+            { "name": ".Net Core" },
+            { "name": "C#" },
+            { "name": "ASP.NET" },
+            { "name": "Javascript" },
+            { "name": "Jira" },
+            { "name": "MSSQL Server" },
+            { "name": "React" },
+            { "name": "SCRUM" }
+        ]
+    },
+    {
         "company": "Opticall BPO",
         "role": "Senior Software Developer",
         "startDate": "April 2021",
