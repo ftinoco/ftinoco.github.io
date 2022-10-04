@@ -1,4 +1,4 @@
-# My Personal Portfolio, Built with React
+# My Personal Portfolio built with React
 
 To view this code live visit: [https://ftinoco.github.io/](https://ftinoco.github.io/)
  
@@ -14,3 +14,4 @@ To send email from contact section, this site uses a service hosted on heroku, a
 
 ### Credits
 - Portfolio based on [templateflip](https://templateflip.com).
+- This application is deployed in github pages, I'm using [https://github.com/gitname/react-gh-pages](react-gh-pages)
