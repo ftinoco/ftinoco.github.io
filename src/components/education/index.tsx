@@ -18,9 +18,6 @@ export const Education = () => {
      */
     const sanitizedData = (item: IEducation) => {
         let html = item.description;
-        if (item.credentials) {
-            html += `<a href=${item.credentials} target="_blank" rel="noreferrer">See credetials</a>`; 
-        }
         return { __html: DOMPurify.sanitize(html) }
     }
 
@@ -42,7 +39,12 @@ export const Education = () => {
                                 <div className="card-body">
                                     <div className="h5">{item.title}</div>
                                     <p className="category">{item.institution}</p>
-                                    <div dangerouslySetInnerHTML={sanitizedData(item)} />  
+                                    <div dangerouslySetInnerHTML={sanitizedData(item)} />
+                                    {item.credentials &&
+                                        <p>
+                                            <a href={item.credentials} target="_blank" rel="noreferrer">See credetials</a>
+                                        </p>
+                                    }
                                 </div>
                             </div>
                         </div>
