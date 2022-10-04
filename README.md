@@ -7,7 +7,8 @@ To send email from contact section, this site uses a service hosted on heroku, a
 ### Upcoming Updates
 - [ ] Deploy on a custom domain 
 - [ ] Add more to the projects section  
-- [ ] Update experience section
+- [x] Update experience section
+- [ ] Fix behavior when showing less work experiences
 - [ ] Add unit testing
 - [ ] Implement services to cosume porfolio info
 - [x] Open education credentials in other tab
