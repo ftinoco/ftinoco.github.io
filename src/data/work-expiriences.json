@@ -1,37 +1,51 @@
 [
     {
+        "company": "Opticall BPO",
+        "role": "Senior Software Developer",
+        "startDate": "April 2021",
+        "endDate": "August 2021",
+        "about": [
+            { "description": "My first contact with English in professional environment." },
+            {
+                "description": "My main dutties were the maintenance of the business application. Development of new functionalities for the managed care, inventory and sales department. Collaboration with Indian developers and American coordinator, in addition, with the staff of the department where I was responsible for developing new functionalities."
+            } 
+        ],
+        "url": "https://www.opticallbpo.com/",
+        "stack": [ 
+            { "name": ".Net framework" },
+            { "name": "C#" },
+            { "name": "ASP.NET MVC" },
+            { "name": "Javascript" },
+            { "name": "Jira" },
+            { "name": "MSSQL Server" },
+            { "name": "jQuery" }
+        ]
+    },
+    {
         "company": "Consulting Group",
         "role": "Development Engineer Consultant",
         "startDate": "Octuber 2019",
         "endDate": "March 2021",
         "about": [
+            { "description": "Great place to work." },
             {
-                "description": "Great place to work."
+                "description": "I was worked as a developer 100% remotely. My main functions there are develop business solutions for our clients in throughout Central American region."
             },
             {
-                "description": "Currently I am working here, it is 100% remote job. My main functions there are develop business solutions for our clients in throughout Central American region."
-            },
-            {
-                "description": "Among my greatest achievements in the company is the development and implementation of cost-effectiveness calculation processes for Central American Integration Bank (BCIE) in technologies such as Oracle, DevExtreme, C# and ASP.NET MVC 5."
+                "description": "Among my greatest achievements in the company is the development and implementation of cost-effectiveness calculation processes for Central American Bank, in technologies such as Oracle, DevExtreme, C# and ASP.NET MVC 5."
             }
         ],
         "url": "https://www.cgclatam.com/",
         "stack": [
-            {
-                "name": "Oracle"
-            },
-            {
-                "name": "DevExtreme"
-            },
-            {
-                "name": "C#"
-            },
-            {
-                "name": "ASP.NET MVC 5"
-            },
-            {
-                "name": "Javascript"
-            }
+            { "name": "Oracle" },
+            { "name": "DevExtreme" },
+            { "name": "C#" },
+            { "name": "ASP.NET MVC 5" },
+            { "name": "Javascript" },
+            { "name": "Azure DevOps" },
+            { "name": "SCRUM" },
+            { "name": ".NET Core" },
+            { "name": "MSSQL Server" }
         ]
     },
     {
@@ -40,42 +54,26 @@
         "startDate": "March 2016",
         "endDate": "September 2019",
         "about": [
-            {
-                "description": "The place where I got most of my professional experience."
-            },
+            { "description": "The place where I got most of my professional experience." },
             {
                 "description": "I worked here around 4 years, in that time I performed as a programmer analyst where my duties were develop, test and implement business sofware solutions for many companies in Nicaragua, both private and public sectors."
             },
             {
-                "description": "Among my outstanding performance, I can highlight development of the Agricultural Quarentine System for Institute for Agricultural Protection and Health (IPSA), this project was my most important development in the company because it had a great impact on the control of import and export of agricultural products in the country, optimizing and improving this process. For this project we use technologies such as ASP.NET MVC 5, MSSQL Server, ASP.NET Web Api."
+                "description": "Among my outstanding performance, I can outstanding development of the Agricultural Quarentine System for a government institution here in Nicaragua, this project was my most important development in the company because it had a great impact on the control of import of agricultural products in the country, optimizing and improving this process. For this project we use technologies such as ASP.NET MVC 5, MSSQL Server, ASP.NET Web Api."
             }
         ],
         "url": "http://www.xolosa.com/",
         "stack": [
-            {
-                "name": "Oracle"
-            },
-            {
-                "name": "MSSQL Server"
-            },
-            {
-                "name": "C#"
-            },
-            {
-                "name": "ASP.NET MVC 5"
-            },
-            {
-                "name": "Javascript"
-            },
-            {
-                "name": "Java"
-            },
-            {
-                "name": "ASP.NET Web API"
-            },
-            {
-                "name": "VB.NET"
-            }
+            { "name": "Oracle" },
+            { "name": "MSSQL Server" },
+            { "name": "C#" },
+            { "name": "ASP.NET MVC 5" },
+            { "name": "Javascript" },
+            { "name": "Java" },
+            { "name": "ASP.NET Web API" },
+            { "name": "VB.NET" },
+            { "name": "ZK" },
+            { "name": "Entity Framework" }
         ]
     },
     {
@@ -84,9 +82,7 @@
         "startDate": "Octuber 2013",
         "endDate": "July 2015",
         "about": [
-            {
-                "description": "My beginnings."
-            },
+            { "description": "My beginnings." },
             {
                 "description": "In this company I started my career as a software developer, here I was given the opportunity to show my skills when I was still a university student. Here I was part of many projects based on the .NET platform."
             },
@@ -96,21 +92,13 @@
         ],
         "url": "http://www.versateclatam.com/",
         "stack": [
-            {
-                "name": "ASP.NET Webform"
-            },
-            {
-                "name": "MSSQL Server"
-            },
-            {
-                "name": "C#"
-            },
-            {
-                "name": "Devexpress suite"
-            },
-            {
-                "name": "Javascript"
-            }
+            { "name": "ASP.NET Webform" },
+            { "name": "MSSQL Server" },
+            { "name": "C#" },
+            { "name": "Devexpress suite" },
+            { "name": "Javascript" },
+            { "name": "VB.NET" },
+            { "name": "jQuery" }
         ]
     }
 ]
