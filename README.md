@@ -14,4 +14,4 @@ To send email from contact section, this site uses a service hosted on heroku, a
 
 ### Credits
 - Portfolio based on [templateflip](https://templateflip.com).
-- This application is deployed in github pages, I'm using [https://github.com/gitname/react-gh-pages](react-gh-pages)
+- This application is deployed in github pages, I'm using [react-gh-pages](https://github.com/gitname/react-gh-pages)
