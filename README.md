@@ -9,9 +9,10 @@ To send email from contact section, this site uses a service hosted on heroku, a
 - [ ] Deploy on a custom domain  
 - [ ] Implement services to get portfolio information
 - [ ] Add more records in projects section 
-- [x] Open education credentials in other tab
-- [x] Update experience section
-- [x] Fix behavior when showing less work experiences
+- [ ] Become contact form to react-hook-form
+- [x] ~~Open education credentials in other tab~~
+- [x] ~~Update experience section~~
+- [x] ~~Fix behavior when showing less work experiences~~
 
 ### Credits
 - Portfolio based on [templateflip](https://templateflip.com).
