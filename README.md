@@ -5,13 +5,13 @@ To view this code live visit: [https://ftinoco.github.io/](https://ftinoco.githu
 To send email from contact section, this site uses a service hosted on heroku, and based on python/flask ([Repo](https://github.com/ftinoco/flask_sender_email)).
 
 ### Upcoming Updates
-- [ ] Deploy on a custom domain 
-- [ ] Add more to the projects section  
-- [x] Update experience section
-- [ ] Fix behavior when showing less work experiences
 - [ ] Add unit testing
-- [ ] Implement services to cosume porfolio info
+- [ ] Deploy on a custom domain  
+- [ ] Implement services to get portfolio information
+- [ ] Add more records in projects section 
 - [x] Open education credentials in other tab
+- [x] Update experience section
+- [x] Fix behavior when showing less work experiences
 
 ### Credits
 - Portfolio based on [templateflip](https://templateflip.com).
