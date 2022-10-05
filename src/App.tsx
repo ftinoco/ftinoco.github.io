@@ -12,6 +12,8 @@ import { IPortfolio } from './utils/interfaces/interfaces';
 import { getPorfolioData$, portfolioData$ } from './services/profile-service';
 import { defaultValues } from './utils/consts/portfolio';
 import { useEffect, useState } from 'react';
+import 'aos/dist/aos.css'
+import AOS from 'aos';
 
 export const App = () => {
   const [fullName, setFullName] = useState('');
@@ -27,6 +29,11 @@ export const App = () => {
       portfolioData.profile.firstName.concat(' ')
         .concat(portfolioData.profile.lastName));
   }, [portfolioData])
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
 
   return (
     <>
