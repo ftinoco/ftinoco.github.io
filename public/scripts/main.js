@@ -2,8 +2,8 @@
 // Don't forget to add it into respective layouts where this js file is needed
 
 $(document).ready(function () {
-  $('#frmContact').on('submit', function (e) { e.preventDefault(); }); 
-  $('#frmContact').validate({
+  $('#frmContact1').on('submit', function (e) { e.preventDefault(); }); 
+  $('#frmContact1').validate({
     rules: {
       message: 'required',
       name: 'required',
