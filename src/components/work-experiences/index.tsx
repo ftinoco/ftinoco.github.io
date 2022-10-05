@@ -86,9 +86,9 @@ export const WorkExperience = () => {
                 }
                 {showLess &&
                     <div className="text-center">
-                        <a className="btn btn-primary smooth-scroll mr-2"  href="#experience" onClick={showLessEventHandler}>
+                        <button className="btn btn-primary smooth-scroll mr-2" onClick={showLessEventHandler}>
                             Show less
-                        </a>
+                        </button>
                     </div>
                 }
             </div>
