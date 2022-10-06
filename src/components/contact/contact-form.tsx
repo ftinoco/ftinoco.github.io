@@ -9,8 +9,7 @@ export const ContactForm = () => {
 
     const {
         register,
-        handleSubmit,
-        setValue,
+        handleSubmit, 
         reset,
         formState: { errors }
     } = useForm({ mode: 'all' });
@@ -22,8 +21,7 @@ export const ContactForm = () => {
             didOpen: () => {
                 MySwal.showLoading();
             },
-          })
-        //MySwal.showLoading(MySwal.getDenyButton() as HTMLButtonElement);
+          }) 
         await sendEmail(info).then((result) => {
             MySwal.close();
             if (result.isSuccessful) {
