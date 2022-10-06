@@ -13,8 +13,8 @@ export const Contact = () => {
                 }}>
                 <div className="container">
                     <div className="cc-contact">
-                        <div className="row">
-                            <div className="col-md-9">
+                        <div className="row justify-content-center">
+                            <div className="col-md-10">
                                 <div className="card mb-0" data-aos="zoom-in">
                                     <div className="h4 text-center title">Contact Me</div>
                                     <div className="row">
