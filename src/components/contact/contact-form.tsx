@@ -1,28 +1,56 @@
-import { EMAIL_SENDER_ENDPOINT } from "../../utils/consts";
 import { useForm } from 'react-hook-form';
-
-export interface EmailInfo {
-    name?: string;
-}
+import { IContact } from "../../utils/interfaces/interfaces";
+import { sendEmail } from "../../services/email-service";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 export const ContactForm = () => {
+    const MySwal = withReactContent(Swal);
 
     const {
         register,
         handleSubmit,
+        setValue,
+        reset,
         formState: { errors }
     } = useForm({ mode: 'all' });
 
-    const onSubmitHandler = (info: EmailInfo) => {
-        console.log('submiting...'); 
-        console.log(info);
+    const onSubmitHandler = async (info: IContact) => {
+        MySwal.fire({
+            title: 'Sending...', 
+            timerProgressBar: true,
+            didOpen: () => {
+                MySwal.showLoading();
+            },
+          })
+        //MySwal.showLoading(MySwal.getDenyButton() as HTMLButtonElement);
+        await sendEmail(info).then((result) => {
+            MySwal.close();
+            if (result.isSuccessful) {
+                MySwal.fire({
+                    icon: 'success',
+                    title: 'Email has been sent',
+                    text: result.message as string,
+                    allowOutsideClick: false
+                }).then(() => {
+                    reset();
+                });
+            } else {
+                MySwal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong!',
+                    allowOutsideClick: false
+                });
+                console.debug(result.message);
+            }
+        }); 
     }
-
+ 
     return (
         <div className="col-md-6">
             <div className="card-body">
-                <form onSubmit={handleSubmit(onSubmitHandler)} action={EMAIL_SENDER_ENDPOINT}
-                    autoComplete="off" method="POST" id="frmContact">
+                <form onSubmit={handleSubmit(onSubmitHandler)} autoComplete="off">
                     <div className="p pb-3">
                         <strong>Feel free to contact me</strong>
                     </div>
@@ -37,8 +65,8 @@ export const ContactForm = () => {
                                     className="form-control"
                                     {...register('name', {
                                         maxLength: {
-                                            message: 'Enter a maximum of 50 characters.',
-                                            value: 50
+                                            message: 'Enter a maximum of 64 characters.',
+                                            value: 64
                                         },
                                         required: {
                                             message: 'This field is required.',
@@ -61,8 +89,27 @@ export const ContactForm = () => {
                                 <span className="input-group-addon">
                                     <i className="fa fa-file-text"></i>
                                 </span>
-                                <input className="form-control" type="text" name="Subject" placeholder="Subject" />
+                                <input type="text"
+                                    className="form-control"
+                                    placeholder="Subject"
+                                    {...register('subject', {
+                                        maxLength: {
+                                            message: 'Enter a maximum of 128 characters.',
+                                            value: 128
+                                        },
+                                        required: {
+                                            message: 'This field is required.',
+                                            value: true
+                                        }
+                                    })} />
                             </div>
+                            {errors?.subject &&
+                                <label id="name-error"
+                                    style={{ display: 'block' }}
+                                    className="error mt-2 invalid-feedback">
+                                    {errors?.subject?.message as string}
+                                </label>
+                            }
                         </div>
                     </div>
                     <div className="row mb-3">
@@ -71,16 +118,57 @@ export const ContactForm = () => {
                                 <span className="input-group-addon">
                                     <i className="fa fa-envelope"></i>
                                 </span>
-                                <input className="form-control" type="email" name="_replyto" placeholder="E-mail" />
+                                <input type="text"
+                                    className="form-control"
+                                    placeholder="E-mail"
+                                    {...register('replyTo', {
+                                        maxLength: {
+                                            message: 'Enter a maximum of 64 characters.',
+                                            value: 64
+                                        },
+                                        required: {
+                                            message: 'This field is required.',
+                                            value: true
+                                        },
+                                        pattern: {
+                                            message: 'Invalid email',
+                                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
+                                        }
+                                    })} />
                             </div>
+                            {errors?.replyTo &&
+                                <label id="name-error"
+                                    style={{ display: 'block' }}
+                                    className="error mt-2 invalid-feedback">
+                                    {errors?.replyTo?.message as string}
+                                </label>
+                            }
                         </div>
                     </div>
                     <div className="row mb-3">
                         <div className="col">
                             <div className="form-group">
-                                <textarea className="form-control" name="message" placeholder="Your Message" maxLength={500}>
+                                <textarea className="form-control"
+                                    placeholder="Your Message"
+                                    {...register('message', {
+                                        maxLength: {
+                                            message: 'Enter a maximum of 512 characters.',
+                                            value: 512
+                                        },
+                                        required: {
+                                            message: 'This field is required.',
+                                            value: true
+                                        }
+                                    })}>
                                 </textarea>
                             </div>
+                            {errors?.message &&
+                                <label id="name-error"
+                                    style={{ display: 'block' }}
+                                    className="error mt-2 invalid-feedback">
+                                    {errors?.message?.message as string}
+                                </label>
+                            }
                         </div>
                     </div>
                     <div className="row">
