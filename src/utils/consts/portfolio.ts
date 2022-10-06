@@ -6,7 +6,7 @@ export const defaultValues: IPortfolio = {
     contact: {
         message: '',
         name: '',
-        replayTo: '',
+        replyTo: '',
         subject: ''
     },
     educationData: [],

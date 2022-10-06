@@ -16,10 +16,10 @@ export interface ISocialMedia {
 }
 
 export interface IContact {
-    name: string;
-    subject: string;
-    replayTo: string;
-    message: string;
+    name?: string;
+    subject?: string;
+    replyTo?: string;
+    message?: string;
 }
 
 export interface IPortfolio {
