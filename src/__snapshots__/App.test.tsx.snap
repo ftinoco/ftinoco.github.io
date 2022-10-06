@@ -1500,16 +1500,13 @@ exports[`renders learn react link 1`] = `
                           class="card-body"
                         >
                           <form
-                            action="https://flask-email.herokuapp.com/sendEmail"
                             autocomplete="off"
-                            id="frmContact"
-                            method="POST"
                           >
                             <div
                               class="p pb-3"
                             >
                               <strong>
-                                Feel free to contact me 
+                                Feel free to contact me
                               </strong>
                             </div>
                             <div
@@ -1532,7 +1529,6 @@ exports[`renders learn react link 1`] = `
                                     class="form-control"
                                     name="name"
                                     placeholder="Name"
-                                    required=""
                                     type="text"
                                   />
                                 </div>
@@ -1556,9 +1552,8 @@ exports[`renders learn react link 1`] = `
                                   </span>
                                   <input
                                     class="form-control"
-                                    name="Subject"
+                                    name="subject"
                                     placeholder="Subject"
-                                    required=""
                                     type="text"
                                   />
                                 </div>
@@ -1582,10 +1577,9 @@ exports[`renders learn react link 1`] = `
                                   </span>
                                   <input
                                     class="form-control"
-                                    name="_replyto"
+                                    name="replyTo"
                                     placeholder="E-mail"
-                                    required=""
-                                    type="email"
+                                    type="text"
                                   />
                                 </div>
                               </div>
@@ -1601,10 +1595,8 @@ exports[`renders learn react link 1`] = `
                                 >
                                   <textarea
                                     class="form-control"
-                                    maxlength="500"
                                     name="message"
                                     placeholder="Your Message"
-                                    required=""
                                   />
                                 </div>
                               </div>
