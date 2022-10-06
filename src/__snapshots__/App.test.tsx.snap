@@ -1,0 +1,1731 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `
+<DocumentFragment>
+  <header>
+    <div
+      class="profile-page sidebar-collapse"
+    >
+      <nav
+        class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary"
+        color-on-scroll="400"
+      >
+        <div
+          class="container"
+        >
+          <div
+            class="navbar-translate"
+          >
+            <button
+              class="navbar-brand"
+            >
+              Fernando Tinoco
+            </button>
+            <button
+              aria-controls="navigation"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              class="navbar-toggler navbar-toggler"
+              data-target="#navigation"
+              data-toggle="collapse"
+              type="button"
+            >
+              <span
+                class="navbar-toggler-bar bar1"
+              />
+              <span
+                class="navbar-toggler-bar bar2"
+              />
+              <span
+                class="navbar-toggler-bar bar3"
+              />
+            </button>
+          </div>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navigation"
+          >
+            <ul
+              class="navbar-nav"
+            >
+              <li
+                class="nav-item"
+              >
+                <a
+                  class="nav-link smooth-scroll"
+                  href="#about"
+                >
+                  About
+                </a>
+              </li>
+              <li
+                class="nav-item"
+              >
+                <a
+                  class="nav-link smooth-scroll"
+                  href="#skill"
+                >
+                  Skills
+                </a>
+              </li>
+              <li
+                class="nav-item"
+              >
+                <a
+                  class="nav-link smooth-scroll"
+                  href="#portfolio"
+                >
+                  Portfolio
+                </a>
+              </li>
+              <li
+                class="nav-item"
+              >
+                <a
+                  class="nav-link smooth-scroll"
+                  href="#experience"
+                >
+                  Experience
+                </a>
+              </li>
+              <li
+                class="nav-item"
+              >
+                <a
+                  class="nav-link smooth-scroll"
+                  href="#contact"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div
+    class="page-content"
+  >
+    <div>
+      <div
+        class="profile-page"
+      >
+        <div
+          class="wrapper"
+        >
+          <div
+            class="page-header page-header-small"
+            filter-color="green"
+          >
+            <div
+              class="page-header-image"
+              data-parallax="true"
+              style="background-image: url(images/cc-bg-2.jpg);"
+            />
+            <div
+              class="container"
+            >
+              <div
+                class="content-center"
+              >
+                <div
+                  class="cc-profile-image"
+                >
+                  <a
+                    href="#"
+                  >
+                    <img
+                      alt="Fernando Tinoco"
+                      src="images/profile.jpg"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="h2 title"
+                >
+                  Fernando Tinoco
+                </div>
+                <p
+                  class="category text-white"
+                >
+                  Software Developer, Computer Engineer
+                </p>
+                <a
+                  class="btn btn-primary smooth-scroll mr-2 aos-init aos-animate"
+                  data-aos="zoom-in"
+                  data-aos-anchor="data-aos-anchor"
+                  href="#contact"
+                >
+                  Hire Me
+                </a>
+                <a
+                  class="btn btn-primary aos-init aos-animate"
+                  data-aos="zoom-in"
+                  data-aos-anchor="data-aos-anchor"
+                  href="/Resume.pdf"
+                  target="_blank"
+                >
+                  Download CV
+                </a>
+              </div>
+            </div>
+            <div
+              class="section"
+            >
+              <div
+                class="container"
+              >
+                <div
+                  class="button-container"
+                >
+                  <a
+                    class="btn btn-default btn-round btn-lg btn-icon"
+                    href="https://www.linkedin.com/in/ftinococ45"
+                    rel="noreferrer"
+                    target="_blank"
+                    title="Connect with me on Linkedin"
+                  >
+                    <i
+                      class="fa fa-linkedin"
+                    />
+                  </a>
+                  <a
+                    class="btn btn-default btn-round btn-lg btn-icon"
+                    href="https://github.com/ftinoco"
+                    rel="noreferrer"
+                    target="_blank"
+                    title="Follow me on Github"
+                  >
+                    <i
+                      class="fa fa-github"
+                    />
+                  </a>
+                  <a
+                    class="btn btn-default btn-round btn-lg btn-icon"
+                    href="skype:ftinococ.45"
+                    rel="noreferrer"
+                    target="_blank"
+                    title="Connect with me on Skype"
+                  >
+                    <i
+                      class="fa fa-skype"
+                    />
+                  </a>
+                  <a
+                    class="btn btn-default btn-round btn-lg btn-icon"
+                    href="https://t.me/ftinococ45"
+                    rel="noreferrer"
+                    target="_blank"
+                    title="Connect with me on Telegram"
+                  >
+                    <i
+                      class="fa fa-telegram"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section"
+        id="about"
+      >
+        <div
+          class="container"
+        >
+          <div
+            class="card aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-offset="10"
+          >
+            <div
+              class="row"
+            >
+              <div
+                class="col-lg-6 col-md-12"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="h4 mt-0 title"
+                  >
+                    About
+                  </div>
+                  <p>
+                    Hi there!
+                  </p>
+                  <p>
+                    I am a Nicaraguan that love enjoying a good coffee, watching movies, series and anime. I love my country and I hope one day to know it completely.
+                  </p>
+                  <p>
+                    About my technical skills, I would say that I am a tech enthusiast, I am always looking for what to learn. I have worked on many platforms and programming languages, but my strong point is web develop and .NET technologies, I have been part of both back-end and front-end. I am currently focused on learning Python and ReactJS.
+                  </p>
+                  <p>
+                    I have always thought that if you do what you like the most, you will never work.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-lg-6 col-md-12"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="h4 mt-0 title"
+                  >
+                    Basic Information
+                  </div>
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col-sm-4"
+                    >
+                      <strong
+                        class="text-uppercase"
+                      >
+                        Age:
+                      </strong>
+                    </div>
+                    <div
+                      class="col-sm-8"
+                    >
+                      30
+                    </div>
+                  </div>
+                  <div
+                    class="row mt-3"
+                  >
+                    <div
+                      class="col-sm-4"
+                    >
+                      <strong
+                        class="text-uppercase"
+                      >
+                        Email:
+                      </strong>
+                    </div>
+                    <div
+                      class="col-sm-8"
+                    >
+                      <a
+                        href="ftinococ.45@gmail.com"
+                      >
+                        ftinococ.45@gmail.com
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="row mt-3"
+                  >
+                    <div
+                      class="col-sm-4"
+                    >
+                      <strong
+                        class="text-uppercase"
+                      >
+                        Phone:
+                      </strong>
+                    </div>
+                    <div
+                      class="col-sm-8"
+                    >
+                      (+505) 8994-7284
+                    </div>
+                  </div>
+                  <div
+                    class="row mt-3"
+                  >
+                    <div
+                      class="col-sm-4"
+                    >
+                      <strong
+                        class="text-uppercase"
+                      >
+                        Address:
+                      </strong>
+                    </div>
+                    <div
+                      class="col-sm-8"
+                    >
+                      Managua, Nicaragua
+                    </div>
+                  </div>
+                  <div
+                    class="row mt-3"
+                  >
+                    <div
+                      class="col-sm-4"
+                    >
+                      <strong
+                        class="text-uppercase"
+                      >
+                        Languages:
+                      </strong>
+                    </div>
+                    <div
+                      class="col-sm-8"
+                    >
+                      <span
+                        style="margin-bottom: 10px; display: block;"
+                      >
+                        Spanish - native
+                      </span>
+                      <span
+                        style="margin-bottom: 10px; display: block;"
+                      >
+                        English - B2
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section"
+        id="skill"
+      >
+        <div
+          class="container"
+        >
+          <div
+            class="h4 text-center mb-4 title"
+          >
+            Professional Skills
+          </div>
+          <div
+            class="card aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+          >
+            <div
+              class="card-body"
+            >
+              <div
+                class="row"
+              >
+                <div
+                  class="col-md-6"
+                >
+                  <div
+                    class="progress-container progress-primary"
+                  >
+                    <span
+                      class="progress-badge"
+                    >
+                      C#
+                    </span>
+                    <div
+                      class="progress"
+                    >
+                      <div
+                        aria-valuemax="100"
+                        aria-valuemin="0"
+                        aria-valuenow="90"
+                        class="progress-bar progress-bar-primary"
+                        data-aos="progress-full"
+                        data-aos-duration="2000"
+                        data-aos-offset="10"
+                        role="progressbar"
+                        style="width: 90%;"
+                      />
+                      <span
+                        class="progress-value"
+                      >
+                        90%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6"
+                >
+                  <div
+                    class="progress-container progress-primary"
+                  >
+                    <span
+                      class="progress-badge"
+                    >
+                      ASP.NET / ASP.NET CORE
+                    </span>
+                    <div
+                      class="progress"
+                    >
+                      <div
+                        aria-valuemax="100"
+                        aria-valuemin="0"
+                        aria-valuenow="80"
+                        class="progress-bar progress-bar-primary"
+                        data-aos="progress-full"
+                        data-aos-duration="2000"
+                        data-aos-offset="10"
+                        role="progressbar"
+                        style="width: 80%;"
+                      />
+                      <span
+                        class="progress-value"
+                      >
+                        80%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="row"
+              >
+                <div
+                  class="col-md-6"
+                >
+                  <div
+                    class="progress-container progress-primary"
+                  >
+                    <span
+                      class="progress-badge"
+                    >
+                      Git
+                    </span>
+                    <div
+                      class="progress"
+                    >
+                      <div
+                        aria-valuemax="100"
+                        aria-valuemin="0"
+                        aria-valuenow="80"
+                        class="progress-bar progress-bar-primary"
+                        data-aos="progress-full"
+                        data-aos-duration="2000"
+                        data-aos-offset="10"
+                        role="progressbar"
+                        style="width: 80%;"
+                      />
+                      <span
+                        class="progress-value"
+                      >
+                        80%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6"
+                >
+                  <div
+                    class="progress-container progress-primary"
+                  >
+                    <span
+                      class="progress-badge"
+                    >
+                      Javascript
+                    </span>
+                    <div
+                      class="progress"
+                    >
+                      <div
+                        aria-valuemax="100"
+                        aria-valuemin="0"
+                        aria-valuenow="75"
+                        class="progress-bar progress-bar-primary"
+                        data-aos="progress-full"
+                        data-aos-duration="2000"
+                        data-aos-offset="10"
+                        role="progressbar"
+                        style="width: 75%;"
+                      />
+                      <span
+                        class="progress-value"
+                      >
+                        75%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="row"
+              >
+                <div
+                  class="col-md-6"
+                >
+                  <div
+                    class="progress-container progress-primary"
+                  >
+                    <span
+                      class="progress-badge"
+                    >
+                      Oracle
+                    </span>
+                    <div
+                      class="progress"
+                    >
+                      <div
+                        aria-valuemax="100"
+                        aria-valuemin="0"
+                        aria-valuenow="60"
+                        class="progress-bar progress-bar-primary"
+                        data-aos="progress-full"
+                        data-aos-duration="2000"
+                        data-aos-offset="10"
+                        role="progressbar"
+                        style="width: 60%;"
+                      />
+                      <span
+                        class="progress-value"
+                      >
+                        60%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6"
+                >
+                  <div
+                    class="progress-container progress-primary"
+                  >
+                    <span
+                      class="progress-badge"
+                    >
+                      Azure DevOps
+                    </span>
+                    <div
+                      class="progress"
+                    >
+                      <div
+                        aria-valuemax="100"
+                        aria-valuemin="0"
+                        aria-valuenow="60"
+                        class="progress-bar progress-bar-primary"
+                        data-aos="progress-full"
+                        data-aos-duration="2000"
+                        data-aos-offset="10"
+                        role="progressbar"
+                        style="width: 60%;"
+                      />
+                      <span
+                        class="progress-value"
+                      >
+                        60%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="row"
+              >
+                <div
+                  class="col-md-6"
+                >
+                  <div
+                    class="progress-container progress-primary"
+                  >
+                    <span
+                      class="progress-badge"
+                    >
+                      jQuery
+                    </span>
+                    <div
+                      class="progress"
+                    >
+                      <div
+                        aria-valuemax="100"
+                        aria-valuemin="0"
+                        aria-valuenow="90"
+                        class="progress-bar progress-bar-primary"
+                        data-aos="progress-full"
+                        data-aos-duration="2000"
+                        data-aos-offset="10"
+                        role="progressbar"
+                        style="width: 90%;"
+                      />
+                      <span
+                        class="progress-value"
+                      >
+                        90%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6"
+                >
+                  <div
+                    class="progress-container progress-primary"
+                  >
+                    <span
+                      class="progress-badge"
+                    >
+                      Boostrap
+                    </span>
+                    <div
+                      class="progress"
+                    >
+                      <div
+                        aria-valuemax="100"
+                        aria-valuemin="0"
+                        aria-valuenow="80"
+                        class="progress-bar progress-bar-primary"
+                        data-aos="progress-full"
+                        data-aos-duration="2000"
+                        data-aos-offset="10"
+                        role="progressbar"
+                        style="width: 80%;"
+                      />
+                      <span
+                        class="progress-value"
+                      >
+                        80%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="row"
+              >
+                <div
+                  class="col-md-6"
+                >
+                  <div
+                    class="progress-container progress-primary"
+                  >
+                    <span
+                      class="progress-badge"
+                    >
+                      SQL Server
+                    </span>
+                    <div
+                      class="progress"
+                    >
+                      <div
+                        aria-valuemax="100"
+                        aria-valuemin="0"
+                        aria-valuenow="80"
+                        class="progress-bar progress-bar-primary"
+                        data-aos="progress-full"
+                        data-aos-duration="2000"
+                        data-aos-offset="10"
+                        role="progressbar"
+                        style="width: 80%;"
+                      />
+                      <span
+                        class="progress-value"
+                      >
+                        80%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6"
+                >
+                  <div
+                    class="progress-container progress-primary"
+                  >
+                    <span
+                      class="progress-badge"
+                    >
+                      React
+                    </span>
+                    <div
+                      class="progress"
+                    >
+                      <div
+                        aria-valuemax="100"
+                        aria-valuemin="0"
+                        aria-valuenow="40"
+                        class="progress-bar progress-bar-primary"
+                        data-aos="progress-full"
+                        data-aos-duration="2000"
+                        data-aos-offset="10"
+                        role="progressbar"
+                        style="width: 40%;"
+                      />
+                      <span
+                        class="progress-value"
+                      >
+                        40%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section"
+        id="portfolio"
+      >
+        <div
+          class="container"
+        >
+          <div
+            class="row"
+          >
+            <div
+              class="col-md-6 ml-auto mr-auto"
+            >
+              <div
+                class="h4 text-center mb-4 title"
+              >
+                Portfolio
+              </div>
+              <div
+                class="nav-align-center"
+              >
+                <ul
+                  class="nav nav-pills nav-pills-primary"
+                  role="tablist"
+                >
+                  <li
+                    class="nav-item"
+                  >
+                    <a
+                      class="nav-link active"
+                      data-toggle="tab"
+                      href="#web-development"
+                      role="tablist"
+                    >
+                      <i
+                        aria-hidden="true"
+                        class="fa fa-laptop"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-content gallery mt-5"
+          >
+            <div
+              class="tab-pane active"
+              id="web-development"
+            >
+              <div
+                class="ml-auto mr-auto"
+              >
+                <div
+                  class="row"
+                >
+                  <div
+                    class="col-md-6"
+                  >
+                    <div
+                      class="cc-porfolio-image img-raised"
+                      data-aos="fade-up"
+                      data-aos-anchor-placement="top-bottom"
+                    >
+                      <a
+                        href="https://github.com/ftinoco/flask_sender_email"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        <figure
+                          class="cc-effect"
+                        >
+                          <img
+                            alt="Sender Email"
+                            src="images/project-2.jpg"
+                          />
+                          <figcaption>
+                            <div
+                              class="h4"
+                            >
+                              Sender Email
+                            </div>
+                            <p>
+                              Python/Flask Development
+                            </p>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </div>
+                    <div
+                      class="cc-porfolio-image img-raised"
+                      data-aos="fade-up"
+                      data-aos-anchor-placement="top-bottom"
+                    >
+                      <a
+                        href="#portfolio"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        <figure
+                          class="cc-effect"
+                        >
+                          <img
+                            alt="Accounts Payable and Billing System"
+                            src="images/project-5.jpg"
+                          />
+                          <figcaption>
+                            <div
+                              class="h4"
+                            >
+                              Accounts Payable and Billing System
+                            </div>
+                            <p>
+                              Web Development
+                            </p>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6"
+                  >
+                    <div
+                      class="cc-porfolio-image img-raised"
+                      data-aos="fade-up"
+                      data-aos-anchor-placement="top-bottom"
+                    >
+                      <a
+                        href="https://www.nuget.org/packages/NetCoreCommon/"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        <figure
+                          class="cc-effect"
+                        >
+                          <img
+                            alt=".NET Core Utils Project"
+                            src="images/project-4.jpg"
+                          />
+                          <figcaption>
+                            <div
+                              class="h4"
+                            >
+                              .NET Core Utils Project
+                            </div>
+                            <p>
+                              Class Library Package
+                            </p>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </div>
+                    <div
+                      class="cc-porfolio-image img-raised"
+                      data-aos="fade-up"
+                      data-aos-anchor-placement="top-bottom"
+                    >
+                      <a
+                        href="#portfolio"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        <figure
+                          class="cc-effect"
+                        >
+                          <img
+                            alt="Vehicle Fleet Control System"
+                            src="images/project-1.jpg"
+                          />
+                          <figcaption>
+                            <div
+                              class="h4"
+                            >
+                              Vehicle Fleet Control System
+                            </div>
+                            <p>
+                              Web Development
+                            </p>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section"
+        id="experience"
+      >
+        <div
+          class="container cc-experience"
+        >
+          <div
+            class="h4 text-center mb-4 title"
+          >
+            Work Experience
+          </div>
+          <div
+            class="card"
+          >
+            <div
+              class="row"
+            >
+              <div
+                class="col-md-3 bg-primary"
+                data-aos="fade-right"
+                data-aos-duration="500"
+                data-aos-offset="50"
+              >
+                <div
+                  class="card-body cc-experience-header"
+                >
+                  <p>
+                    August 2021 - Current
+                  </p>
+                  <div
+                    class="h5"
+                  >
+                    <a
+                      href="https://www.stepstone.com/en/"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Saongroup / Stepstone
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-9"
+                data-aos="fade-left"
+                data-aos-duration="500"
+                data-aos-offset="50"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="h5"
+                  >
+                    .NET Developer
+                  </div>
+                  <p>
+                    My first job where I work alongside european people.
+                  </p>
+                  <p>
+                    Currently I am working here, the experience in the company has been great as allows me learn about new technologies such as react. In addition, it allows me interact with irish, polish and salvadorean colleague.
+                  </p>
+                  <p>
+                    My main responsabilities here is develop and maintenence of existing job sites. But currently I working on a project react and its ecosystem, developing unit testing for react components.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card"
+          >
+            <div
+              class="row"
+            >
+              <div
+                class="col-md-3 bg-primary"
+                data-aos="fade-right"
+                data-aos-duration="500"
+                data-aos-offset="50"
+              >
+                <div
+                  class="card-body cc-experience-header"
+                >
+                  <p>
+                    April 2021 - August 2021
+                  </p>
+                  <div
+                    class="h5"
+                  >
+                    <a
+                      href="https://www.opticallbpo.com/"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Opticall BPO
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-9"
+                data-aos="fade-left"
+                data-aos-duration="500"
+                data-aos-offset="50"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="h5"
+                  >
+                    Senior Software Developer
+                  </div>
+                  <p>
+                    My first contact with English in professional environment.
+                  </p>
+                  <p>
+                    My main dutties were the maintenance of the business application. Development of new functionalities for the managed care, inventory and sales department. Collaboration with Indian developers and American coordinator, in addition, with the staff of the department where I was responsible for developing new functionalities.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card"
+          >
+            <div
+              class="row"
+            >
+              <div
+                class="col-md-3 bg-primary"
+                data-aos="fade-right"
+                data-aos-duration="500"
+                data-aos-offset="50"
+              >
+                <div
+                  class="card-body cc-experience-header"
+                >
+                  <p>
+                    Octuber 2019 - March 2021
+                  </p>
+                  <div
+                    class="h5"
+                  >
+                    <a
+                      href="https://www.cgclatam.com/"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Consulting Group
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-9"
+                data-aos="fade-left"
+                data-aos-duration="500"
+                data-aos-offset="50"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="h5"
+                  >
+                    Development Engineer Consultant
+                  </div>
+                  <p>
+                    Great place to work.
+                  </p>
+                  <p>
+                    I was worked as a developer 100% remotely. My main functions there are develop business solutions for our clients in throughout Central American region.
+                  </p>
+                  <p>
+                    Among my greatest achievements in the company is the development and implementation of cost-effectiveness calculation processes for Central American Bank, in technologies such as Oracle, DevExtreme, C# and ASP.NET MVC 5.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="text-center"
+          >
+            <button
+              class="btn btn-primary smooth-scroll mr-2"
+            >
+              Show more
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section"
+      >
+        <div
+          class="container cc-education"
+        >
+          <div
+            class="h4 text-center mb-4 title"
+          >
+            Education
+          </div>
+          <div
+            class="card"
+          >
+            <div
+              class="row"
+            >
+              <div
+                class="col-md-3 bg-primary"
+                data-aos="fade-right"
+                data-aos-duration="500"
+                data-aos-offset="50"
+              >
+                <div
+                  class="card-body cc-education-header"
+                >
+                  <p>
+                    2020 - 2020
+                  </p>
+                  <div
+                    class="h5"
+                  >
+                    Microsoft Certification
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-9"
+                data-aos="fade-left"
+                data-aos-duration="500"
+                data-aos-offset="50"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="h5"
+                  >
+                    MCSA: Web Applications
+                  </div>
+                  <p
+                    class="category"
+                  >
+                    Microsoft
+                  </p>
+                  <div>
+                    <p>
+                      I was certified as MCSA: Web Applications, passing the following exams: 
+                    </p>
+                    <ul>
+                       
+                      <li>
+                        70-480: Programming in HTML5 with JavaScript and CSS3 
+                      </li>
+                       
+                      <li>
+                        70-486: Developing ASP.NET MVC Web Applications.
+                      </li>
+                       
+                    </ul>
+                    <p />
+                  </div>
+                  <p>
+                    <a
+                      href="https://www.youracclaim.com/badges/723ae1c2-68c9-4c8b-8153-5d8717769fa0?source=linked_in_profile"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      See credetials
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card"
+          >
+            <div
+              class="row"
+            >
+              <div
+                class="col-md-3 bg-primary"
+                data-aos="fade-right"
+                data-aos-duration="500"
+                data-aos-offset="50"
+              >
+                <div
+                  class="card-body cc-education-header"
+                >
+                  <p>
+                    2010 - 2015
+                  </p>
+                  <div
+                    class="h5"
+                  >
+                    Bachelor's Degree
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-9"
+                data-aos="fade-left"
+                data-aos-duration="500"
+                data-aos-offset="50"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="h5"
+                  >
+                    Computing Engineer
+                  </div>
+                  <p
+                    class="category"
+                  >
+                    Universidad Nacional de Ingeniería
+                  </p>
+                  <div>
+                    <p>
+                      I graduated as a Computing Engineer from the National Engineering University of Nicaragua. Here I learned about programming bases, algorithms, data structure and other topics that allowed me to developed part of my logic programming which in turn allowed me start my carreer and work as a Software Developer. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section"
+        id="reference"
+      >
+        <div
+          class="container cc-reference"
+        >
+          <div
+            class="h4 mb-4 text-center title"
+          >
+            References
+          </div>
+          <div
+            class="card aos-init aos-animate"
+            data-aos="zoom-in"
+          >
+            <div
+              class="carousel slide"
+              data-ride="carousel"
+              id="cc-Indicators"
+            >
+              <ol
+                class="carousel-indicators"
+              >
+                <li
+                  class="active"
+                  data-slide-to="0"
+                  data-target="#cc-Indicators"
+                />
+                <li
+                  class=""
+                  data-slide-to="1"
+                  data-target="#cc-Indicators"
+                />
+                <li
+                  class=""
+                  data-slide-to="2"
+                  data-target="#cc-Indicators"
+                />
+              </ol>
+              <div
+                class="carousel-inner"
+              >
+                <div
+                  class="carousel-item active"
+                >
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col-lg-3 col-md-4 cc-reference-header"
+                    >
+                      <div
+                        class="avatar"
+                      >
+                        <div
+                          class="avatar__letters"
+                        >
+                          JR
+                        </div>
+                      </div>
+                      <div
+                        class="h5 pt-2"
+                      >
+                        Jorge Rivera
+                      </div>
+                      <p
+                        class="category"
+                      >
+                        AWS Certified | Scrum Certified | SQL Server | .NET C# | Consultant
+                      </p>
+                    </div>
+                    <div
+                      class="col-lg-9 col-md-8"
+                    >
+                      <p>
+                        Fernando is a dedicated and proactive professional. During the time we shared in VersaTec, he worked with ASP.NET, C# and SQL Server in different projects, and he proved to improve and grow in knowledge and skills.
+                      </p>
+                      <p>
+                        I have no doubt that any company that decides to acquire his services is winning a great professional who will help it to achieve its goals.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="carousel-item "
+                >
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col-lg-3 col-md-4 cc-reference-header"
+                    >
+                      <div
+                        class="avatar"
+                      >
+                        <div
+                          class="avatar__letters"
+                        >
+                          WP
+                        </div>
+                      </div>
+                      <div
+                        class="h5 pt-2"
+                      >
+                        William Palacios
+                      </div>
+                      <p
+                        class="category"
+                      >
+                        Software Engineer at PayPal
+                      </p>
+                    </div>
+                    <div
+                      class="col-lg-9 col-md-8"
+                    >
+                      <p>
+                        Fernando is one of the best professionals and .NET developers I have worked with, he has outstanding leadership skills, his passion for excellence and continuous improvement, always lead him to apply the best software development standards and practices.
+                      </p>
+                      <p>
+                        I had the pleasure to work with Fernando a few years ago, and I was very impressed with his technical quality and soft skills, definitely a great team player. He has my full confidence and recommendation, I'm sure he will be able to exceed the expectations of any team, and will be a fundamental piece to achieve the goals of any organization.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="carousel-item "
+                >
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col-lg-3 col-md-4 cc-reference-header"
+                    >
+                      <div
+                        class="avatar"
+                      >
+                        <div
+                          class="avatar__letters"
+                        >
+                          <img
+                            src="images/reference-image-1.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="h5 pt-2"
+                      >
+                        Luis Fernández
+                      </div>
+                      <p
+                        class="category"
+                      >
+                        Chief Technology Officer & Co-Founder en UNLIMITED PGASUS S.A. DE C.V.
+                      </p>
+                    </div>
+                    <div
+                      class="col-lg-9 col-md-8"
+                    >
+                      <p>
+                        Fernando is a developer of great technical capacity, attentive to details and above all careful to always deliver products that follow the best development practices, quality standards and testing.
+                      </p>
+                      <p>
+                        He is very focused on delivering his activities as soon as possible and is attentive to his colleagues in order to overcome project problems as a team.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section"
+        id="contact"
+      >
+        <div
+          class="cc-contact-information"
+          style="background-image: url(images/staticmap.png); background-repeat: no-repeat; background-size: cover;"
+        >
+          <div
+            class="container"
+          >
+            <div
+              class="cc-contact"
+            >
+              <div
+                class="row"
+              >
+                <div
+                  class="col-md-9"
+                >
+                  <div
+                    class="card mb-0 aos-init aos-animate"
+                    data-aos="zoom-in"
+                  >
+                    <div
+                      class="h4 text-center title"
+                    >
+                      Contact Me
+                    </div>
+                    <div
+                      class="row"
+                    >
+                      <div
+                        class="col-md-6"
+                      >
+                        <div
+                          class="card-body"
+                        >
+                          <form
+                            autocomplete="off"
+                          >
+                            <div
+                              class="p pb-3"
+                            >
+                              <strong>
+                                Feel free to contact me
+                              </strong>
+                            </div>
+                            <div
+                              class="row mb-3"
+                            >
+                              <div
+                                class="col"
+                              >
+                                <div
+                                  class="input-group"
+                                >
+                                  <span
+                                    class="input-group-addon"
+                                  >
+                                    <i
+                                      class="fa fa-user-circle"
+                                    />
+                                  </span>
+                                  <input
+                                    class="form-control"
+                                    name="name"
+                                    placeholder="Name"
+                                    type="text"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="row mb-3"
+                            >
+                              <div
+                                class="col"
+                              >
+                                <div
+                                  class="input-group"
+                                >
+                                  <span
+                                    class="input-group-addon"
+                                  >
+                                    <i
+                                      class="fa fa-file-text"
+                                    />
+                                  </span>
+                                  <input
+                                    class="form-control"
+                                    name="subject"
+                                    placeholder="Subject"
+                                    type="text"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="row mb-3"
+                            >
+                              <div
+                                class="col"
+                              >
+                                <div
+                                  class="input-group"
+                                >
+                                  <span
+                                    class="input-group-addon"
+                                  >
+                                    <i
+                                      class="fa fa-envelope"
+                                    />
+                                  </span>
+                                  <input
+                                    class="form-control"
+                                    name="replyTo"
+                                    placeholder="E-mail"
+                                    type="text"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="row mb-3"
+                            >
+                              <div
+                                class="col"
+                              >
+                                <div
+                                  class="form-group"
+                                >
+                                  <textarea
+                                    class="form-control"
+                                    name="message"
+                                    placeholder="Your Message"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="row"
+                            >
+                              <div
+                                class="col"
+                              >
+                                <button
+                                  class="btn btn-primary"
+                                  type="submit"
+                                >
+                                  Send
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div
+                        class="col-md-6"
+                      >
+                        <div
+                          class="card-body"
+                        >
+                          <p
+                            class="mb-0"
+                          >
+                            <strong>
+                              Address 
+                            </strong>
+                          </p>
+                          <p
+                            class="pb-2"
+                          >
+                            Managua, Nicaragua
+                          </p>
+                          <p
+                            class="mb-0"
+                          >
+                            <strong>
+                              Phone
+                            </strong>
+                          </p>
+                          <p
+                            class="pb-2"
+                          >
+                            (+505) 8994-7284
+                          </p>
+                          <p
+                            class="mb-0"
+                          >
+                            <strong>
+                              Email
+                            </strong>
+                          </p>
+                          <p>
+                            ftinococ.45@gmail.com
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer
+    class="footer"
+  >
+    <div
+      class="container text-center"
+    >
+      <a
+        class="cc-linkedin btn btn-link"
+        href="https://www.linkedin.com/in/ftinococ45"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-linkedin fa-2x"
+        />
+      </a>
+      <a
+        class="cc-github btn btn-link"
+        href="https://github.com/ftinoco"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-github fa-2x"
+        />
+      </a>
+      <a
+        class="cc-skype btn btn-link"
+        href="skype:ftinococ.45"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-skype fa-2x"
+        />
+      </a>
+      <a
+        class="cc-telegram btn btn-link"
+        href="https://t.me/ftinococ45"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-telegram fa-2x"
+        />
+      </a>
+    </div>
+    <div
+      class="h4 title text-center"
+    >
+      Fernando Tinoco
+    </div>
+  </footer>
+</DocumentFragment>
+`;
