@@ -1527,6 +1527,7 @@ exports[`renders learn react link 1`] = `
                                   </span>
                                   <input
                                     class="form-control"
+                                    data-testid="name"
                                     name="name"
                                     placeholder="Name"
                                     type="text"
@@ -1577,6 +1578,7 @@ exports[`renders learn react link 1`] = `
                                   </span>
                                   <input
                                     class="form-control"
+                                    data-testid="email"
                                     name="replyTo"
                                     placeholder="E-mail"
                                     type="text"
@@ -1595,6 +1597,7 @@ exports[`renders learn react link 1`] = `
                                 >
                                   <textarea
                                     class="form-control"
+                                    data-testid="message"
                                     name="message"
                                     placeholder="Your Message"
                                   />
@@ -1609,6 +1612,7 @@ exports[`renders learn react link 1`] = `
                               >
                                 <button
                                   class="btn btn-primary"
+                                  data-testid="btn-send"
                                   type="submit"
                                 >
                                   Send
@@ -1620,6 +1624,7 @@ exports[`renders learn react link 1`] = `
                       </div>
                       <div
                         class="col-md-6"
+                        data-testid="container"
                       >
                         <div
                           class="card-body"
@@ -1655,7 +1660,9 @@ exports[`renders learn react link 1`] = `
                               Email
                             </strong>
                           </p>
-                          <p>
+                          <p
+                            data-testid="email"
+                          >
                             ftinococ.45@gmail.com
                           </p>
                         </div>

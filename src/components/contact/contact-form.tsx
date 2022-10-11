@@ -61,6 +61,7 @@ export const ContactForm = () => {
                                 <input type="text"
                                     placeholder="Name"
                                     className="form-control"
+                                    data-testid="name"
                                     {...register('name', {
                                         maxLength: {
                                             message: 'Enter a maximum of 64 characters.',
@@ -73,7 +74,8 @@ export const ContactForm = () => {
                                     })} />
                             </div>
                             {errors?.name &&
-                                <label id="name-error"
+                                <label role="error"
+                                    data-testid="name-error"
                                     style={{ display: 'block' }}
                                     className="error mt-2 invalid-feedback">
                                     {errors?.name?.message as string}
@@ -102,8 +104,9 @@ export const ContactForm = () => {
                                     })} />
                             </div>
                             {errors?.subject &&
-                                <label id="name-error"
+                                <label role="error"
                                     style={{ display: 'block' }}
+                                    data-testid="subject-error"
                                     className="error mt-2 invalid-feedback">
                                     {errors?.subject?.message as string}
                                 </label>
@@ -119,6 +122,7 @@ export const ContactForm = () => {
                                 <input type="text"
                                     className="form-control"
                                     placeholder="E-mail"
+                                    data-testid="email"
                                     {...register('replyTo', {
                                         maxLength: {
                                             message: 'Enter a maximum of 64 characters.',
@@ -129,14 +133,15 @@ export const ContactForm = () => {
                                             value: true
                                         },
                                         pattern: {
-                                            message: 'Invalid email',
+                                            message: 'Invalid email.',
                                             value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
                                         }
                                     })} />
                             </div>
                             {errors?.replyTo &&
-                                <label id="name-error"
+                                <label role="error"
                                     style={{ display: 'block' }}
+                                    data-testid="email-error"
                                     className="error mt-2 invalid-feedback">
                                     {errors?.replyTo?.message as string}
                                 </label>
@@ -148,6 +153,7 @@ export const ContactForm = () => {
                             <div className="form-group">
                                 <textarea className="form-control"
                                     placeholder="Your Message"
+                                    data-testid="message"
                                     {...register('message', {
                                         maxLength: {
                                             message: 'Enter a maximum of 512 characters.',
@@ -161,8 +167,9 @@ export const ContactForm = () => {
                                 </textarea>
                             </div>
                             {errors?.message &&
-                                <label id="name-error"
+                                <label role="error"
                                     style={{ display: 'block' }}
+                                    data-testid="message-error"
                                     className="error mt-2 invalid-feedback">
                                     {errors?.message?.message as string}
                                 </label>
@@ -172,7 +179,8 @@ export const ContactForm = () => {
                     <div className="row">
                         <div className="col">
                             <button type="submit"
-                                className="btn btn-primary" >
+                                className="btn btn-primary"
+                                data-testid="btn-send" >
                                 Send
                             </button>
                         </div>
