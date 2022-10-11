@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import {
     getWorkExperienceData$,
     workExperienceData$
-} from "../../services/work-experience-service";
-import { MAX_WORK_EXPERIENCE_TO_SHOW } from "../../utils/consts/portfolio";
+} from "../../services/work-experience-service"; 
+import { MAX_WORK_EXPERIENCE_TO_SHOW } from "../../utils/consts";
 import { IWorkExperience } from "./interfaces";
 
 export const WorkExperience = () => {
