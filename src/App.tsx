@@ -14,6 +14,7 @@ import { defaultValues } from './utils/consts/portfolio';
 import { useEffect, useState } from 'react';
 import 'aos/dist/aos.css'
 import AOS from 'aos';
+import { ScrollToTop } from './components/scroll-to-top';
 
 export const App = () => {
   const [fullName, setFullName] = useState('');
@@ -37,6 +38,7 @@ export const App = () => {
 
   return (
     <>
+      <ScrollToTop />
       <Header fullName={fullName} />
       <div className="page-content">
         <div>
