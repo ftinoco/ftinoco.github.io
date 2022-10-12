@@ -6894,3 +6894,15 @@
 .secundary-color{
   background-color: #f2f2f2;
 }
+
+.btn-outline-primary{
+  color: #378c3f;
+  border: 2px solid #378c3f;
+  background-color: transparent;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus{
+  color: #f2f2f2;
+  border: 2px solid #378c3f;
+  background-color: #378c3f;
+}

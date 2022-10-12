@@ -9,10 +9,16 @@ export const ContactForm = () => {
 
     const {
         register,
-        handleSubmit, 
+        handleSubmit,
         reset,
+        clearErrors,
         formState: { errors }
     } = useForm({ mode: 'all' });
+
+    const onClearHandler = () => {
+        reset();
+        clearErrors();
+    }
 
     const onSubmitHandler = async (info: IContact) => {
         MySwal.fire({
@@ -21,8 +27,7 @@ export const ContactForm = () => {
             didOpen: () => {
                 MySwal.showLoading();
             },
-          })
-        //MySwal.showLoading(MySwal.getDenyButton() as HTMLButtonElement);
+        })
         await sendEmail(info).then((result) => {
             MySwal.close();
             if (result.isSuccessful) {
@@ -177,9 +182,17 @@ export const ContactForm = () => {
                     </div>
                     <div className="row">
                         <div className="col">
+                            <button className="btn btn-outline-primary"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    onClearHandler()
+                                }}
+                                data-testid="btn-clear">
+                                CLEAR
+                            </button>
                             <button type="submit"
-                                className="btn btn-primary" 
-data-testid="btn-send">
+                                className="btn btn-outline-primary"
+                                data-testid="btn-send">
                                 SEND MESSAGE
                             </button>
                         </div>
