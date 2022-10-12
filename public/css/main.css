@@ -6755,56 +6755,6 @@
       opacity: 0;
     }
   }
-  .cc-profile-image{
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    margin: 0; 
-    background-color: rgba(255,255,255,.8);
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-  }
-  .cc-profile-image a {
-    position: relative;
-  }
-  
-  .cc-profile-image a:before {
-    content: "";
-    border: 15px solid rgba(55, 140, 63, 0.6);
-    border-radius: 50%;
-    height: 310px;
-    width: 310px;
-    position: absolute;
-    left: 0;
-    -webkit-animation: pulsate 1.6s ease-out;
-    animation: pulsate 1.6s ease-out;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    opacity: 0;
-    z-index: 99;
-  }
-  
-  .cc-profile-image img {
-    position: relative;
-    border-radius: 50%;
-    height: 310px;
-    width: 310px;
-    padding: 0;
-    margin: 0;
-    border: 15px solid transparent;
-    z-index: 9999;
-    transition: all 0.3s ease-out;
-  }
-  
-  .cc-profile-image a:hover img {
-    transform: scale(1.06, 1.06);
-  }
-  
-  .cc-profile-image a:hover:before {
-    -webkit-animation: none;
-    animation: none;
-  }
   
   /* Profile Page Social button Style */
   .button-container .btn-default {
@@ -6982,19 +6932,6 @@
   }
   .justify-content-center{
     justify-content: center;
-  }
-  .brand-title{
-    font-family: 'Sarina', cursive;
-    font-size: 70px;
-  }
-  .brand-title .primary{
-    color: #f2f2f2;
-  }
-  .brand-title .secundary{
-    color: #378c3f;
-    position:absolute;
-    top: 25px;
-    margin-left: -15px;
   }
   .navbar>.container{
     margin-right: 0px;
