@@ -2,6 +2,8 @@ import { useObservableState, useSubscription } from "observable-hooks";
 import { getReferenceData$, referenceData$ } from "../../services/reference-service";
 import { IReference } from "./interfaces";
 
+import './index.css';
+
 export const Reference = () => {
     const references = useObservableState<IReference[]>(
         referenceData$, []

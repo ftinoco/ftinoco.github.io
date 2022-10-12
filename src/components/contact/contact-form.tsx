@@ -9,19 +9,25 @@ export const ContactForm = () => {
 
     const {
         register,
-        handleSubmit, 
+        handleSubmit,
         reset,
+        clearErrors,
         formState: { errors }
     } = useForm({ mode: 'all' });
 
+    const onClearHandler = () => {
+        reset();
+        clearErrors();
+    }
+
     const onSubmitHandler = async (info: IContact) => {
         MySwal.fire({
-            title: 'Sending...', 
+            title: 'Sending...',
             timerProgressBar: true,
             didOpen: () => {
                 MySwal.showLoading();
             },
-          }) 
+        })
         await sendEmail(info).then((result) => {
             MySwal.close();
             if (result.isSuccessful) {
@@ -42,16 +48,14 @@ export const ContactForm = () => {
                 });
                 console.debug(result.message);
             }
-        }); 
+        });
     }
- 
+
     return (
-        <div className="col-md-6">
+        <div className="contact-frm">
             <div className="card-body">
                 <form onSubmit={handleSubmit(onSubmitHandler)} autoComplete="off">
-                    <div className="p pb-3">
-                        <strong>Feel free to contact me</strong>
-                    </div>
+                    <div className="h4 title">Send a message</div>
                     <div className="row mb-3">
                         <div className="col">
                             <div className="input-group">
@@ -178,10 +182,18 @@ export const ContactForm = () => {
                     </div>
                     <div className="row">
                         <div className="col">
+                            <button className="btn btn-outline-primary"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    onClearHandler()
+                                }}
+                                data-testid="btn-clear">
+                                CLEAR
+                            </button>
                             <button type="submit"
-                                className="btn btn-primary"
-                                data-testid="btn-send" >
-                                Send
+                                className="btn btn-outline-primary"
+                                data-testid="btn-send">
+                                SEND MESSAGE
                             </button>
                         </div>
                     </div>

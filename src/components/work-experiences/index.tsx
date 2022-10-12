@@ -7,6 +7,8 @@ import {
 import { MAX_WORK_EXPERIENCE_TO_SHOW } from "../../utils/consts";
 import { IWorkExperience } from "./interfaces";
 
+import './index.css';
+
 export const WorkExperience = () => {
 
     const [showLess, setShowLess] = useState(false);
@@ -79,15 +81,15 @@ export const WorkExperience = () => {
                 ))}
                 {showMore &&
                     <div className="text-center">
-                        <button className="btn btn-primary smooth-scroll mr-2" onClick={showMoreEventHandler}>
-                            Show more
+                        <button className="btn btn-outline-primary smooth-scroll mr-2" onClick={showMoreEventHandler}>
+                            SHOW MORE
                         </button>
                     </div>
                 }
                 {showLess &&
                     <div className="text-center">
-                        <button className="btn btn-primary smooth-scroll mr-2" onClick={showLessEventHandler}>
-                            Show less
+                        <button className="btn btn-outline-primary smooth-scroll mr-2" onClick={showLessEventHandler}>
+                            SHOW LESS
                         </button>
                     </div>
                 }

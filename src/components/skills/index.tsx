@@ -2,6 +2,8 @@ import { useObservableState, useSubscription } from "observable-hooks";
 import { getSkillData$, skillData$ } from "../../services/skill-service";
 import { ISkill } from "./interfaces";
 
+import './index.css'
+
 export const Skill = () => {
     const skills = useObservableState<ISkill[]>(skillData$, []);
     useSubscription(getSkillData$, (s) => { skillData$.next(s) });
