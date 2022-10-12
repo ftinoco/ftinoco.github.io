@@ -2,6 +2,8 @@ import { useObservableState, useSubscription } from "observable-hooks";
 import { getProjectData$, projectData$ } from "../../services/project-service";
 import { IProject } from "./interfaces";
 
+import './index.css';
+
 export const Project = () => {
     const projects = useObservableState<IProject[]>(
         projectData$, []
