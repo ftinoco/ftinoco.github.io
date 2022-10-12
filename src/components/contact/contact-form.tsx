@@ -17,12 +17,12 @@ export const ContactForm = () => {
 
     const onSubmitHandler = async (info: IContact) => {
         MySwal.fire({
-            title: 'Sending...', 
+            title: 'Sending...',
             timerProgressBar: true,
             didOpen: () => {
                 MySwal.showLoading();
             },
-          })
+        })
         //MySwal.showLoading(MySwal.getDenyButton() as HTMLButtonElement);
         await sendEmail(info).then((result) => {
             MySwal.close();
@@ -44,16 +44,14 @@ export const ContactForm = () => {
                 });
                 console.debug(result.message);
             }
-        }); 
+        });
     }
- 
+
     return (
-        <div className="col-md-6">
+        <div className="contact-frm">
             <div className="card-body">
                 <form onSubmit={handleSubmit(onSubmitHandler)} autoComplete="off">
-                    <div className="p pb-3">
-                        <strong>Feel free to contact me</strong>
-                    </div>
+                    <div className="h4 title">Send a message</div>
                     <div className="row mb-3">
                         <div className="col">
                             <div className="input-group">
@@ -175,7 +173,7 @@ export const ContactForm = () => {
                         <div className="col">
                             <button type="submit"
                                 className="btn btn-primary" >
-                                Send
+                                SEND MESSAGE
                             </button>
                         </div>
                     </div>

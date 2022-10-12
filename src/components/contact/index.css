@@ -1,0 +1,78 @@
+.cc-contact-information {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /* background-image: url('../../../public/images/staticmap-1.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cc-contact-information .cc-contact {
+    padding: 8% 0;
+}
+
+@media (max-width: 767px) {
+    .cc-contact-information .cc-contact {
+        padding: 30px 0px;
+    }
+}
+
+.cc-contact-information .background {
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000000;
+}
+
+.cc-contact { 
+    font-weight: 500;
+    position: relative;
+}
+
+.cc-contact .h2 { 
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-top: 30px;
+}
+
+.cc-contact p {
+    text-align: justify;
+}
+
+.invalid-feedback {
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.contact-info {
+    margin-bottom: 15px;
+}
+.contact-info i { 
+    width: 39px;
+    height: 39px;
+    font-size: 18px;
+    line-height: 39px;
+    text-align: center;  
+    color: #378c3f; 
+    margin-right: 5px;
+    border: 2px solid #378c3f;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    display: inline-block;
+}
+.contact-info .phone i{
+    top: -7px;
+    position: relative;
+}
+.contact-info p{
+    display: inline-block;
+}
+
+.contact-frm .h4 {
+    margin-top: 0px;
+}
