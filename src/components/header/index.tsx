@@ -1,6 +1,22 @@
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 
-export const Header: FC<{fullName: string}> = ({fullName}) => {
+export const Header: FC<{ fullName: string }> = ({ fullName }) => {
+
+    const [section, setSection] = useState('');
+
+    const scrollTo = (ev: React.MouseEvent<HTMLAnchorElement, MouseEvent>) =>{
+        ev.preventDefault();
+        const href = (ev.target as HTMLAnchorElement).getAttribute('href'); 
+        if(href) setSection(href.replace('#', ''))
+    }
+
+    useEffect(() => {
+        window.scrollTo({
+            top: document.getElementById(section)?.offsetTop,
+            behavior: 'smooth',
+        });
+    }, [section]);
+
     return (
         <header>
             <div className="profile-page sidebar-collapse">
@@ -19,19 +35,39 @@ export const Header: FC<{fullName: string}> = ({fullName}) => {
                         <div className="collapse navbar-collapse justify-content-end" id="navigation">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <a className="nav-link smooth-scroll" href="#about">About</a>
+                                    <a href="#about"
+                                        className="nav-link smooth-scroll"
+                                        onClick={scrollTo}>
+                                        About
+                                    </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link smooth-scroll" href="#skill">Skills</a>
+                                    <a href="#skill"
+                                        className="nav-link smooth-scroll"
+                                        onClick={scrollTo}>
+                                        Skills
+                                    </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link smooth-scroll" href="#portfolio">Portfolio</a>
+                                    <a href="#portfolio"
+                                        className="nav-link smooth-scroll"
+                                        onClick={scrollTo}>
+                                        Portfolio
+                                    </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link smooth-scroll" href="#experience">Experience</a>
+                                    <a href="#experience"
+                                        className="nav-link smooth-scroll"
+                                        onClick={scrollTo}>
+                                        Experience
+                                    </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link smooth-scroll" href="#contact">Contact</a>
+                                    <a href="#contact"
+                                        className="nav-link smooth-scroll"
+                                        onClick={scrollTo}>
+                                        Contact
+                                    </a>
                                 </li>
                             </ul>
                         </div>
