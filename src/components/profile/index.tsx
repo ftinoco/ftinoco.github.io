@@ -2,6 +2,8 @@ import { FC } from "react"
 import { About } from "./about"
 import { IProfileProps } from "./interfaces"
 
+import './index.css'
+
 export const Profile: FC<IProfileProps> = ({ fullName, profile, socialMedias }) => {
     return (
         <>
@@ -29,7 +31,7 @@ export const Profile: FC<IProfileProps> = ({ fullName, profile, socialMedias }) 
                                             href={sm.link}
                                             rel="noreferrer"
                                             title={sm.title}
-                                            className="btn btn-default btn-round btn-lg btn-icon">
+                                            className="btn btn-social btn-icon">
                                             <i className={`fa ${sm.icon}`}></i>
                                         </a>
                                     )}
