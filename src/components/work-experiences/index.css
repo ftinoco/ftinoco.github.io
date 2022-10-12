@@ -1,0 +1,11 @@
+ .cc-experience .cc-experience-header {
+     padding-top: 60px;
+     padding-right: 0;
+     text-align: center;
+     color: #fff;
+     text-transform: uppercase;
+ }
+
+ .cc-experience .cc-experience-header a {
+     color: #fff;
+ }
