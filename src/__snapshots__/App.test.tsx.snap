@@ -2,12 +2,15 @@
 
 exports[`renders learn react link 1`] = `
 <DocumentFragment>
+  <div
+    class="top-to-btm"
+  />
   <header>
     <div
       class="profile-page sidebar-collapse"
     >
       <nav
-        class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary"
+        class="navbar navbar-expand-lg fixed-top navbar-transparent"
         color-on-scroll="400"
       >
         <div
@@ -17,15 +20,10 @@ exports[`renders learn react link 1`] = `
             class="navbar-translate"
           >
             <button
-              class="navbar-brand"
-            >
-              Fernando Tinoco
-            </button>
-            <button
               aria-controls="navigation"
               aria-expanded="false"
               aria-label="Toggle navigation"
-              class="navbar-toggler navbar-toggler"
+              class="navbar-toggler navbar-toggler bg-primary"
               data-target="#navigation"
               data-toggle="collapse"
               type="button"
@@ -121,7 +119,7 @@ exports[`renders learn react link 1`] = `
             <div
               class="page-header-image"
               data-parallax="true"
-              style="background-image: url(images/cc-bg-2.jpg);"
+              style="background-image: url(images/cc-bg-3.jpg);"
             />
             <div
               class="container"
@@ -129,20 +127,22 @@ exports[`renders learn react link 1`] = `
               <div
                 class="content-center"
               >
-                <div
-                  class="cc-profile-image"
+                <h1
+                  class="brand-title"
                 >
-                  <a
-                    href="#"
+                  <span
+                    class="primary"
                   >
-                    <img
-                      alt="Fernando Tinoco"
-                      src="images/profile.jpg"
-                    />
-                  </a>
-                </div>
+                    F
+                  </span>
+                  <span
+                    class="secundary"
+                  >
+                    T
+                  </span>
+                </h1>
                 <div
-                  class="h2 title"
+                  class="h1 title"
                 >
                   Fernando Tinoco
                 </div>
@@ -151,36 +151,11 @@ exports[`renders learn react link 1`] = `
                 >
                   Software Developer, Computer Engineer
                 </p>
-                <a
-                  class="btn btn-primary smooth-scroll mr-2 aos-init aos-animate"
-                  data-aos="zoom-in"
-                  data-aos-anchor="data-aos-anchor"
-                  href="#contact"
-                >
-                  Hire Me
-                </a>
-                <a
-                  class="btn btn-primary aos-init aos-animate"
-                  data-aos="zoom-in"
-                  data-aos-anchor="data-aos-anchor"
-                  href="/Resume.pdf"
-                  target="_blank"
-                >
-                  Download CV
-                </a>
-              </div>
-            </div>
-            <div
-              class="section"
-            >
-              <div
-                class="container"
-              >
                 <div
                   class="button-container"
                 >
                   <a
-                    class="btn btn-default btn-round btn-lg btn-icon"
+                    class="btn btn-social btn-icon"
                     href="https://www.linkedin.com/in/ftinococ45"
                     rel="noreferrer"
                     target="_blank"
@@ -191,7 +166,7 @@ exports[`renders learn react link 1`] = `
                     />
                   </a>
                   <a
-                    class="btn btn-default btn-round btn-lg btn-icon"
+                    class="btn btn-social btn-icon"
                     href="https://github.com/ftinoco"
                     rel="noreferrer"
                     target="_blank"
@@ -202,7 +177,7 @@ exports[`renders learn react link 1`] = `
                     />
                   </a>
                   <a
-                    class="btn btn-default btn-round btn-lg btn-icon"
+                    class="btn btn-social btn-icon"
                     href="skype:ftinococ.45"
                     rel="noreferrer"
                     target="_blank"
@@ -213,7 +188,7 @@ exports[`renders learn react link 1`] = `
                     />
                   </a>
                   <a
-                    class="btn btn-default btn-round btn-lg btn-icon"
+                    class="btn btn-social btn-icon"
                     href="https://t.me/ftinococ45"
                     rel="noreferrer"
                     target="_blank"
@@ -224,6 +199,22 @@ exports[`renders learn react link 1`] = `
                     />
                   </a>
                 </div>
+              </div>
+            </div>
+            <div
+              class="container"
+            >
+              <div
+                class="cc-profile-image"
+              >
+                <a
+                  href="#"
+                >
+                  <img
+                    alt="Fernando Tinoco"
+                    src="images/profile.jpg"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -1467,8 +1458,15 @@ exports[`renders learn react link 1`] = `
       >
         <div
           class="cc-contact-information"
-          style="background-image: url(images/staticmap.png); background-repeat: no-repeat; background-size: cover;"
         >
+          <iframe
+            class="background"
+            height="450"
+            loading="lazy"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124838.77655773303!2d-86.32850087786538!3d12.097650227236846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f71560dd907880b%3A0x6c5ef4a2144f4c6a!2sManagua!5e0!3m2!1sen!2sni!4v1665608868740!5m2!1sen!2sni"
+            style="border: 0px;"
+            width="600"
+          />
           <div
             class="container"
           >
@@ -1486,185 +1484,221 @@ exports[`renders learn react link 1`] = `
                     data-aos="zoom-in"
                   >
                     <div
-                      class="h4 text-center title"
+                      class="h2 title"
                     >
-                      Contact Me
+                      GET IN TOUCH WITH ME
                     </div>
                     <div
-                      class="row"
+                      class="row col-md-12"
                     >
                       <div
-                        class="col-md-6"
+                        class="col-md-4"
                       >
                         <div
-                          class="card-body"
+                          class="h4 title"
                         >
-                          <form
-                            autocomplete="off"
+                          Contact me
+                        </div>
+                        <p>
+                          Whether you have an interesting project or just want to say hi, feel free to shoot me a message.
+                        </p>
+                        <div
+                          class="card-body"
+                          data-testid="container"
+                        >
+                          <div
+                            class="contact-info"
                           >
                             <div
-                              class="p pb-3"
+                              class="h6"
                             >
-                              <strong>
-                                Feel free to contact me
-                              </strong>
+                              Address
                             </div>
                             <div
-                              class="row mb-3"
+                              class="address"
                             >
-                              <div
-                                class="col"
-                              >
-                                <div
-                                  class="input-group"
-                                >
-                                  <span
-                                    class="input-group-addon"
-                                  >
-                                    <i
-                                      class="fa fa-user-circle"
-                                    />
-                                  </span>
-                                  <input
-                                    class="form-control"
-                                    data-testid="name"
-                                    name="name"
-                                    placeholder="Name"
-                                    type="text"
-                                  />
-                                </div>
-                              </div>
+                              <i
+                                class="fa fa-home"
+                              />
+                              <p>
+                                Managua, Nicaragua
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="contact-info"
+                          >
+                            <div
+                              class="h6"
+                            >
+                              Phone
                             </div>
                             <div
-                              class="row mb-3"
+                              class="phone"
                             >
-                              <div
-                                class="col"
-                              >
-                                <div
-                                  class="input-group"
-                                >
-                                  <span
-                                    class="input-group-addon"
-                                  >
-                                    <i
-                                      class="fa fa-file-text"
-                                    />
-                                  </span>
-                                  <input
-                                    class="form-control"
-                                    name="subject"
-                                    placeholder="Subject"
-                                    type="text"
-                                  />
-                                </div>
-                              </div>
+                              <i
+                                class="fa fa-phone"
+                              />
+                              <p>
+                                (+505) 8994-7284 
+                                <br />
+                                (+505) 5702-7059
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="contact-info"
+                          >
+                            <div
+                              class="h6"
+                            >
+                              Email
                             </div>
                             <div
-                              class="row mb-3"
+                              class="email"
                             >
-                              <div
-                                class="col"
+                              <i
+                                class="fa fa-envelope"
+                              />
+                              <p
+                                data-testid="email"
                               >
-                                <div
-                                  class="input-group"
-                                >
-                                  <span
-                                    class="input-group-addon"
-                                  >
-                                    <i
-                                      class="fa fa-envelope"
-                                    />
-                                  </span>
-                                  <input
-                                    class="form-control"
-                                    data-testid="email"
-                                    name="replyTo"
-                                    placeholder="E-mail"
-                                    type="text"
-                                  />
-                                </div>
-                              </div>
+                                ftinococ.45@gmail.com 
+                                <br />
+                              </p>
                             </div>
-                            <div
-                              class="row mb-3"
-                            >
-                              <div
-                                class="col"
-                              >
-                                <div
-                                  class="form-group"
-                                >
-                                  <textarea
-                                    class="form-control"
-                                    data-testid="message"
-                                    name="message"
-                                    placeholder="Your Message"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                            <div
-                              class="row"
-                            >
-                              <div
-                                class="col"
-                              >
-                                <button
-                                  class="btn btn-primary"
-                                  data-testid="btn-send"
-                                  type="submit"
-                                >
-                                  Send
-                                </button>
-                              </div>
-                            </div>
-                          </form>
+                          </div>
                         </div>
                       </div>
                       <div
-                        class="col-md-6"
-                        data-testid="container"
+                        class="col-md-8"
                       >
                         <div
-                          class="card-body"
+                          class="contact-frm"
                         >
-                          <p
-                            class="mb-0"
+                          <div
+                            class="card-body"
                           >
-                            <strong>
-                              Address 
-                            </strong>
-                          </p>
-                          <p
-                            class="pb-2"
-                          >
-                            Managua, Nicaragua
-                          </p>
-                          <p
-                            class="mb-0"
-                          >
-                            <strong>
-                              Phone
-                            </strong>
-                          </p>
-                          <p
-                            class="pb-2"
-                          >
-                            (+505) 8994-7284
-                          </p>
-                          <p
-                            class="mb-0"
-                          >
-                            <strong>
-                              Email
-                            </strong>
-                          </p>
-                          <p
-                            data-testid="email"
-                          >
-                            ftinococ.45@gmail.com
-                          </p>
+                            <form
+                              autocomplete="off"
+                            >
+                              <div
+                                class="h4 title"
+                              >
+                                Send a message
+                              </div>
+                              <div
+                                class="row mb-3"
+                              >
+                                <div
+                                  class="col"
+                                >
+                                  <div
+                                    class="input-group"
+                                  >
+                                    <span
+                                      class="input-group-addon"
+                                    >
+                                      <i
+                                        class="fa fa-user-circle"
+                                      />
+                                    </span>
+                                    <input
+                                      class="form-control"
+                                      data-testid="name"
+                                      name="name"
+                                      placeholder="Name"
+                                      type="text"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="row mb-3"
+                              >
+                                <div
+                                  class="col"
+                                >
+                                  <div
+                                    class="input-group"
+                                  >
+                                    <span
+                                      class="input-group-addon"
+                                    >
+                                      <i
+                                        class="fa fa-file-text"
+                                      />
+                                    </span>
+                                    <input
+                                      class="form-control"
+                                      name="subject"
+                                      placeholder="Subject"
+                                      type="text"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="row mb-3"
+                              >
+                                <div
+                                  class="col"
+                                >
+                                  <div
+                                    class="input-group"
+                                  >
+                                    <span
+                                      class="input-group-addon"
+                                    >
+                                      <i
+                                        class="fa fa-envelope"
+                                      />
+                                    </span>
+                                    <input
+                                      class="form-control"
+                                      data-testid="email"
+                                      name="replyTo"
+                                      placeholder="E-mail"
+                                      type="text"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="row mb-3"
+                              >
+                                <div
+                                  class="col"
+                                >
+                                  <div
+                                    class="form-group"
+                                  >
+                                    <textarea
+                                      class="form-control"
+                                      data-testid="message"
+                                      name="message"
+                                      placeholder="Your Message"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="row"
+                              >
+                                <div
+                                  class="col"
+                                >
+                                  <button
+                                    class="btn btn-primary"
+                                    data-testid="btn-send"
+                                    type="submit"
+                                  >
+                                    SEND MESSAGE
+                                  </button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1678,60 +1712,71 @@ exports[`renders learn react link 1`] = `
     </div>
   </div>
   <footer
-    class="footer"
+    class="footer footer-default"
   >
     <div
-      class="container text-center"
+      class="footer-content"
     >
-      <a
-        class="cc-linkedin btn btn-link"
-        href="https://www.linkedin.com/in/ftinococ45"
-        rel="noreferrer"
-        target="_blank"
+      <div
+        class="container text-center"
       >
-        <i
-          aria-hidden="true"
-          class="fa fa-linkedin fa-2x"
-        />
-      </a>
-      <a
-        class="cc-github btn btn-link"
-        href="https://github.com/ftinoco"
-        rel="noreferrer"
-        target="_blank"
+        <a
+          class="cc-linkedin btn btn-link"
+          href="https://www.linkedin.com/in/ftinococ45"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-linkedin fa-2x"
+          />
+        </a>
+        <a
+          class="cc-github btn btn-link"
+          href="https://github.com/ftinoco"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-github fa-2x"
+          />
+        </a>
+        <a
+          class="cc-skype btn btn-link"
+          href="skype:ftinococ.45"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-skype fa-2x"
+          />
+        </a>
+        <a
+          class="cc-telegram btn btn-link"
+          href="https://t.me/ftinococ45"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-telegram fa-2x"
+          />
+        </a>
+      </div>
+      <div
+        class="h4 title text-center"
       >
-        <i
-          aria-hidden="true"
-          class="fa fa-github fa-2x"
-        />
-      </a>
-      <a
-        class="cc-skype btn btn-link"
-        href="skype:ftinococ.45"
-        rel="noreferrer"
-        target="_blank"
+        Fernando Tinoco
+      </div>
+      <div
+        class="text-center"
       >
-        <i
-          aria-hidden="true"
-          class="fa fa-skype fa-2x"
-        />
-      </a>
-      <a
-        class="cc-telegram btn btn-link"
-        href="https://t.me/ftinococ45"
-        rel="noreferrer"
-        target="_blank"
-      >
-        <i
-          aria-hidden="true"
-          class="fa fa-telegram fa-2x"
-        />
-      </a>
-    </div>
-    <div
-      class="h4 title text-center"
-    >
-      Fernando Tinoco
+        <p>
+          © 2022 Resume. All rights reserved.
+        </p>
+      </div>
     </div>
   </footer>
 </DocumentFragment>
