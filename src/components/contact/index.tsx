@@ -16,23 +16,23 @@ export const Contact = () => {
                     <div className="cc-contact">
                         <div className="row justify-content-center">
                             <div className="col-md-10">
-                            <div className="card mb-0" data-aos="zoom-in"> 
-                                    <div className="h2 title">GET IN TOUCH WITH ME</div> 
-                                <div className="row col-md-12">
-                                    <div className="col-md-4">
-                                        <div className="h4 title">Contact me</div>
-                                        <p>
-                                            Wheather you have an interesting project or just want to say hi, feel free to shoot me a message.
-                                        </p>
-                                        <ContactInfo />
-                                    </div>
-                                    <div className="col-md-8">
-                                        <ContactForm />
+                                <div className="card mb-0" data-aos="zoom-in">
+                                    <div className="h2 title">GET IN TOUCH WITH ME</div>
+                                    <div className="row col-md-12">
+                                        <div className="col-md-4">
+                                            <div className="h4 title">Contact me</div>
+                                            <p>
+                                                Whether you have an interesting project or just want to say hi, feel free to shoot me a message.
+                                            </p>
+                                            <ContactInfo />
+                                        </div>
+                                        <div className="col-md-8">
+                                            <ContactForm />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                            </div>
                     </div>
                 </div>
             </div>
