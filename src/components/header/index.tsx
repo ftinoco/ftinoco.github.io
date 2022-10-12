@@ -4,11 +4,11 @@ export const Header: FC<{fullName: string}> = ({fullName}) => {
     return (
         <header>
             <div className="profile-page sidebar-collapse">
-                <nav className="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
+                <nav className="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="400">
                     <div className="container">
                         <div className="navbar-translate">
-                            <button className="navbar-brand">{fullName}</button>
-                            <button className="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
+                            {/* <button className="navbar-brand">{fullName}</button> */}
+                            <button className="navbar-toggler navbar-toggler bg-primary" type="button" data-toggle="collapse"
                                 data-target="#navigation" aria-controls="navigation" aria-expanded="false"
                                 aria-label="Toggle navigation">
                                 <span className="navbar-toggler-bar bar1"></span>
