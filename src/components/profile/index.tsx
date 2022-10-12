@@ -12,21 +12,16 @@ export const Profile: FC<IProfileProps> = ({ fullName, profile, socialMedias }) 
                             style={{ backgroundImage: "url('images/cc-bg-3.jpg')" }}></div>
                         <div className="container">
                             <div className="content-center">
-                                <div className="cc-profile-image">
-                                    <a href="#">
-                                        <img src={profile.profileImage} alt={fullName} />
-                                    </a>
-                                </div>
-                                <div className="h2 title">{fullName}</div>
+                                <h1 className="brand-title">
+                                    <span className="primary">F</span>
+                                    <span className="secundary">T</span>
+                                </h1>
+                                <div className="h1 title">{fullName}</div>
                                 <p className="category text-white">{profile.position}, {profile.profession}</p>
-                                <a className="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in"
+                                {/*  <a className="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in"
                                     data-aos-anchor="data-aos-anchor">Hire Me</a>
                                 <a className="btn btn-primary" href="/Resume.pdf" target="_blank" data-aos="zoom-in"
-                                    data-aos-anchor="data-aos-anchor">Download CV</a>
-                            </div>
-                        </div>
-                        <div className="section">
-                            <div className="container">
+                                    data-aos-anchor="data-aos-anchor">Download CV</a> */}
                                 <div className="button-container">
                                     {socialMedias.map((sm, idx) =>
                                         <a key={idx}
@@ -39,6 +34,13 @@ export const Profile: FC<IProfileProps> = ({ fullName, profile, socialMedias }) 
                                         </a>
                                     )}
                                 </div>
+                            </div>
+                        </div> 
+                        <div className="container">
+                            <div className="cc-profile-image">
+                                <a href="#">
+                                    <img src={profile.profileImage} alt={fullName} />
+                                </a>
                             </div>
                         </div>
                     </div>

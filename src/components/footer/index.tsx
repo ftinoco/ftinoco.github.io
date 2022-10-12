@@ -3,7 +3,7 @@ import { IFooterProps } from "./interfaces";
 
 export const Footer: FC<IFooterProps> = ({ fullName, socialMedias }) => {
     return (
-        <footer className="footer">
+        <footer className="footer footer-default">
             <div className="container text-center">
                 {socialMedias.map((sm, idx) =>
                     <a key={idx} className={`cc-${sm.icon.replace('fa-', '')} btn btn-link`}
