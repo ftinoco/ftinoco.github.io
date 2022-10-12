@@ -3,6 +3,8 @@ import { educationData$, getEducationData$ } from "../../services/education-serv
 import { IEducation } from "./interface";
 import DOMPurify from 'dompurify'
 
+import './index.css';
+
 export const Education = () => {
 
     const educationData = useObservableState<IEducation[]>(
