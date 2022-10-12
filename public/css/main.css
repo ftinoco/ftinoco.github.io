@@ -4602,10 +4602,7 @@
   .footer {
     padding: 24px 0;
     
-  }
-  .footer.footer-default {
-    background-color: #f2f2f2;
-  }
+  } 
   .footer nav {
     display: inline-block;
     float: left;
