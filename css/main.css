@@ -2592,97 +2592,6 @@
     margin-top: 0;
   }
   
-  .progress-container {
-    position: relative;
-  }
-  .progress-container + .progress-container,
-  .progress-container ~ .progress-container {
-    margin-top: 15px;
-  }
-  .progress-container .progress-badge {
-    color: #888;
-    font-size: 0.8571em;
-    text-transform: uppercase;
-  }
-  .progress-container .progress {
-    height: 1px;
-    border-radius: 0;
-    box-shadow: none;
-    background: rgba(222, 222, 222, 0.8);
-    margin-top: 14px;
-  }
-  .progress-container .progress .progress-bar {
-    box-shadow: none;
-    background-color: #888;
-  }
-  .progress-container .progress .progress-value {
-    position: absolute;
-    top: 2px;
-    right: 0;
-    color: #888;
-    font-size: 0.8571em;
-  }
-  .progress-container.progress-neutral .progress {
-    background: rgba(255, 255, 255, 0.3);
-  }
-  .progress-container.progress-neutral .progress-bar {
-    background: #ffffff;
-  }
-  .progress-container.progress-neutral .progress-value,
-  .progress-container.progress-neutral .progress-badge {
-    color: #ffffff;
-  }
-  .progress-container.progress-primary .progress {
-    background: rgba(55, 140, 63, 0.4);
-  }
-  .progress-container.progress-primary .progress-bar {
-    background: #378c3f;
-  }
-  .progress-container.progress-primary .progress-value,
-  .progress-container.progress-primary .progress-badge {
-    color: #378c3f;
-  }
-  .progress-container.progress-info .progress {
-    background: rgba(44, 168, 255, 0.3);
-  }
-  .progress-container.progress-info .progress-bar {
-    background: #2ca8ff;
-  }
-  .progress-container.progress-info .progress-value,
-  .progress-container.progress-info .progress-badge {
-    color: #2ca8ff;
-  }
-  .progress-container.progress-success .progress {
-    background: rgba(24, 206, 15, 0.3);
-  }
-  .progress-container.progress-success .progress-bar {
-    background: #18ce0f;
-  }
-  .progress-container.progress-success .progress-value,
-  .progress-container.progress-success .progress-badge {
-    color: #18ce0f;
-  }
-  .progress-container.progress-warning .progress {
-    background: rgba(255, 178, 54, 0.3);
-  }
-  .progress-container.progress-warning .progress-bar {
-    background: #ffb236;
-  }
-  .progress-container.progress-warning .progress-value,
-  .progress-container.progress-warning .progress-badge {
-    color: #ffb236;
-  }
-  .progress-container.progress-danger .progress {
-    background: rgba(255, 54, 54, 0.3);
-  }
-  .progress-container.progress-danger .progress-bar {
-    background: #ff3636;
-  }
-  .progress-container.progress-danger .progress-value,
-  .progress-container.progress-danger .progress-badge {
-    color: #ff3636;
-  }
-  
   /*           badges             */
   .badge {
     border-radius: 8px;
@@ -3651,9 +3560,6 @@
     border-radius: 1px;
   }
   
-  .img-raised {
-    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
-  }
   
   .popover {
     font-size: 14px;
@@ -4602,10 +4508,7 @@
   .footer {
     padding: 24px 0;
     
-  }
-  .footer.footer-default {
-    background-color: #f2f2f2;
-  }
+  } 
   .footer nav {
     display: inline-block;
     float: left;
@@ -6570,141 +6473,6 @@
     }
   }
   
-  /* Images Gallery Style*/
-  .gallery .cc-porfolio-image figure {
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-  }
-  
-  .gallery .cc-porfolio-image figure img {
-    position: relative;
-    display: block;
-    max-width: 100%;
-    opacity: 1;
-  }
-  
-  .gallery .cc-porfolio-image figure figcaption {
-    position: absolute;
-    color: #fff;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  .gallery .cc-porfolio-image figure figcaption,
-  .gallery .cc-porfolio-image figure figcaption > a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .gallery .cc-porfolio-image figure figcaption > a {
-    z-index: 1000;
-    text-indent: 200%;
-    white-space: nowrap;
-    font-size: 0;
-    opacity: 0;
-  }
-  
-  .gallery .cc-porfolio-image figure .h4,
-  .gallery .cc-porfolio-image figure p {
-    margin: 0;
-  }
-  
-  .gallery figure.cc-effect figcaption::before,
-  .gallery figure.cc-effect figcaption::after {
-    position: absolute;
-    content: "";
-    opacity: 0;
-  }
-  
-  .gallery figure.cc-effect figcaption::before {
-    top: 10px;
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
-    transform: scale(0, 0);
-    transform-origin: 0 0;
-  }
-  
-  .gallery figure.cc-effect figcaption::after {
-    top: 10px;
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
-    transform: scale(0, 0);
-    transform-origin: 100% 0;
-  }
-  
-  .gallery figure.cc-effect .h4 {
-    margin-top: 25%;
-    transition: transform 0.35s;
-    opacity: 0;
-  }
-  @media (max-width: 480px) {
-    .gallery figure.cc-effect .h4 {
-      font-size: 14px;
-    }
-  }
-  
-  .gallery figcaption .container {
-    position: absolute;
-    width: 100%;
-    bottom: 20px;
-  }
-  
-  .gallery figure.cc-effect p,
-  .gallery figure.cc-effect button {
-    padding: 0.5em 2em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: transform 0.35s;
-    opacity: 0;
-  }
-  
-  .gallery figure.cc-effect img,
-  .gallery figure.cc-effect .h4 {
-    transform: scale(1.06, 1.06);
-  }
-  
-  .gallery figure.cc-effect img,
-  .gallery figure.cc-effect figcaption::before,
-  .gallery figure.cc-effect figcaption::after,
-  .gallery figure.cc-effect p {
-    transition: opacity 0.35s, transform 0.35s;
-  }
-  
-  .gallery figure.cc-effect:hover img {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-  
-  .gallery figure.cc-effect:hover figcaption::before,
-  .gallery figure.cc-effect:hover figcaption::after {
-    opacity: 1;
-    transform: scale(1);
-  }
-  
-  .gallery figure.cc-effect:hover figcaption:before {
-    background: rgba(27, 23, 23, 0.5);
-  }
-  
-  .gallery figure.cc-effect:hover .h4,
-  .gallery figure.cc-effect:hover p,
-  .gallery figure.cc-effect:hover button {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-    color: #fff;
-  }
-  
-  .gallery figure.cc-effect:hover figcaption::after,
-  .gallery figure.cc-effect:hover .h4,
-  .gallery figure.cc-effect:hover p,
-  .gallery figure.cc-effect:hover img {
-    transition-delay: 0.15s;
-  }
   
   /* Header */
   /* Navbar style*/
@@ -6755,246 +6523,16 @@
       opacity: 0;
     }
   }
-  .cc-profile-image{
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    margin: 0; 
-    background-color: rgba(255,255,255,.8);
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-  }
-  .cc-profile-image a {
-    position: relative;
-  }
-  
-  .cc-profile-image a:before {
-    content: "";
-    border: 15px solid rgba(55, 140, 63, 0.6);
-    border-radius: 50%;
-    height: 310px;
-    width: 310px;
-    position: absolute;
-    left: 0;
-    -webkit-animation: pulsate 1.6s ease-out;
-    animation: pulsate 1.6s ease-out;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    opacity: 0;
-    z-index: 99;
-  }
-  
-  .cc-profile-image img {
-    position: relative;
-    border-radius: 50%;
-    height: 310px;
-    width: 310px;
-    padding: 0;
-    margin: 0;
-    border: 15px solid transparent;
-    z-index: 9999;
-    transition: all 0.3s ease-out;
-  }
-  
-  .cc-profile-image a:hover img {
-    transform: scale(1.06, 1.06);
-  }
-  
-  .cc-profile-image a:hover:before {
-    -webkit-animation: none;
-    animation: none;
-  }
   
   /* Profile Page Social button Style */
   .button-container .btn-default {
     margin-right: 8px;
   }
   
-  /* Professional Skills Style */
-  .progress-container {
-    margin-bottom: 20px;
-    font-size: 18px;
-  }
-  .progress-container .progress-bar {
-    height: 5px;
-    transform: scaleX(0);
-    transition: transform 2s ease-in-out;
-    transform-origin: 0% 0%;
-  }
-  .progress-container .progress {
-    height: 5px;
-    font-size: 18px;
-  }
-  .progress-container .aos-animate {
-    transform: scaleX(1);
-  }
   
-  /* Experience Style */
-  .cc-experience .cc-experience-header {
-    padding-top: 60px;
-    padding-right: 0;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-  }
-  .cc-experience .cc-experience-header a{
-    color: #fff;
-  }
   
-  /* Education Style */
-  .cc-education .h5 {
-    margin-bottom: 0;
-  }
-  
-  .cc-education .cc-education-header {
-    padding-top: 60px;
-    padding-right: 0;
-    text-align: center;
-    color: #fff;
-  }
-  
-  /* References Style */
-  .cc-reference .card {
-    padding: 40px;
-  }
-  
-  .cc-reference .cc-reference-header {
-    text-align: center;
-  }
-  
-  .cc-reference img {
-    height: 120px;
-    width: 120px;
-    max-width: none;
-    border-radius: 50%;
-  }
-  
-  .cc-reference .h5 {
-    margin: 0;
-  }
-  
-  .cc-reference .carousel-indicators li {
-    background: #a5a3a3;
-  }
-  
-  .cc-reference .carousel-indicators .active {
-    background-color: #378c3f;
-  }
-  
-  .cc-reference .carousel-inner {
-    box-shadow: none;
-  }
-  
-  @media (max-width: 768px) {
-    .cc-reference .carousel-indicators {
-      bottom: 0px;
-    }
-    .cc-reference ol {
-      margin-bottom: 0;
-    }
-  }
-  
-  /* Contact Information Style */
-  .cc-contact-information {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-  }
-  .cc-contact-information .cc-contact {
-    padding: 8% 0;
-  }
-  @media (max-width: 767px) {
-    .cc-contact-information .cc-contact {
-      padding: 30px 0px;
-    }
-  }
-  
-  /* Footer */
-  /* Social button style */
-  .cc-facebook:hover i {
-    color: #3b5998;
-  }
-  .cc-twitter:hover i {
-    color: #1da1f2;
-  }
-  .cc-google-plus:hover i {
-    color: #dd4b39;
-  }
-  .cc-instagram:hover i {
-    color: #e54055;
-  }
-  .cc-linkedin:hover i {
-    color: #0a66c2;
-  }
-  .cc-skype:hover i {
-    color: #0191d1;
-  }
-  .cc-telegram:hover i {
-    color: #27a5e5;
-  }
-  /* Credit Style */
-  a.credit {
-    color: inherit;
-    border-bottom: 1px dashed;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  /* Common Style */
-  .section {
-    padding-bottom: 0;
-  }
-  
-  /* Validation message style */
-  .invalid-feedback {
-    width: 100%;
-    margin-top: 0.25rem;
-    font-size: 80%;
-    color: #dc3545;
-  }
-  
-  .avatar {
-    /* Center the content */
-    display: inline-block;
-    vertical-align: middle;
-  
-    /* Used to position the content */
-    position: relative;
-  
-    /* Colors */
-    background-color: #378c3f;
-    color: #fff;
-  
-    /* Rounded border */
-    border-radius: 50%;
-    height: 120px;
-    width: 120px;
-  }
-  
-  .avatar__letters {
-    /* Center the content */
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: xxx-large;
-  }
   .justify-content-center{
     justify-content: center;
-  }
-  .brand-title{
-    font-family: 'Sarina', cursive;
-    font-size: 70px;
-  }
-  .brand-title .primary{
-    color: #f2f2f2;
-  }
-  .brand-title .secundary{
-    color: #378c3f;
-    position:absolute;
-    top: 25px;
-    margin-left: -15px;
   }
   .navbar>.container{
     margin-right: 0px;
@@ -7009,4 +6547,19 @@
 .navbar-expand-lg .navbar-toggler {
   display: block;
 }
+}
+.secundary-color{
+  background-color: #f2f2f2;
+}
+
+.btn-outline-primary{
+  color: #378c3f;
+  border: 2px solid #378c3f;
+  background-color: transparent;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus{
+  color: #f2f2f2;
+  border: 2px solid #378c3f;
+  background-color: #378c3f;
 }
