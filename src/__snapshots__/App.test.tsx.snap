@@ -1138,9 +1138,9 @@ exports[`renders learn react link 1`] = `
             class="text-center"
           >
             <button
-              class="btn btn-primary smooth-scroll mr-2"
+              class="btn btn-outline-primary smooth-scroll mr-2"
             >
-              Show more
+              SHOW MORE
             </button>
           </div>
         </div>
@@ -1153,6 +1153,7 @@ exports[`renders learn react link 1`] = `
         >
           <div
             class="h4 text-center mb-4 title"
+            data-testid="education-title"
           >
             Education
           </div>
@@ -1197,6 +1198,7 @@ exports[`renders learn react link 1`] = `
                   </div>
                   <p
                     class="category"
+                    role="education-institution"
                   >
                     Microsoft
                   </p>
@@ -1271,6 +1273,7 @@ exports[`renders learn react link 1`] = `
                   </div>
                   <p
                     class="category"
+                    role="education-institution"
                   >
                     Universidad Nacional de Ingeniería
                   </p>

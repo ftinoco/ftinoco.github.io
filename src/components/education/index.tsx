@@ -26,11 +26,16 @@ export const Education = () => {
     return (
         <div className="section">
             <div className="container cc-education">
-                <div className="h4 text-center mb-4 title">Education</div>
+                <div className="h4 text-center mb-4 title"
+                    data-testid="education-title">
+                    Education
+                </div>
                 {educationData.map((item, idx) =>
                     <div key={idx} className="card">
                         <div className="row">
-                            <div className="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
+                            <div className="col-md-3 bg-primary"
+                                data-aos="fade-right"
+                                data-aos-offset="50"
                                 data-aos-duration="500">
                                 <div className="card-body cc-education-header">
                                     <p>{item.startDate} - {item.endDate}</p>
@@ -40,7 +45,10 @@ export const Education = () => {
                             <div className="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                                 <div className="card-body">
                                     <div className="h5">{item.title}</div>
-                                    <p className="category">{item.institution}</p>
+                                    <p className="category"
+                                        role="education-institution">
+                                        {item.institution}
+                                    </p>
                                     <div dangerouslySetInnerHTML={sanitizedData(item)} />
                                     {item.credentials &&
                                         <p>
