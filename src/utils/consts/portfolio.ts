@@ -32,6 +32,12 @@ export const defaultValues: IPortfolio = {
     projects: [],
     references: [],
     skills: [],
-    socialMedia: [],
+    socialMedia: [
+        {
+            icon:'linkedin',
+            link: 'https://www.linkedin.com/in/ftinococ45',
+            title: 'Connect with me on Linkedin'
+        }
+    ],
     workExperience: []
 }

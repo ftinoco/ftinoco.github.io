@@ -18,7 +18,7 @@ export const Profile: FC<IProfileProps> = ({ fullName, profile, socialMedias }) 
                                     <span className="primary">F</span>
                                     <span className="secundary">T</span>
                                 </h1>
-                                <div className="h1 title">{fullName}</div>
+                                <div className="h1 title" data-testid="fullname-title">{fullName}</div>
                                 <p className="category text-white">{profile.position}, {profile.profession}</p>
                                 {/*  <a className="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in"
                                     data-aos-anchor="data-aos-anchor">Hire Me</a>
@@ -31,6 +31,7 @@ export const Profile: FC<IProfileProps> = ({ fullName, profile, socialMedias }) 
                                             href={sm.link}
                                             rel="noreferrer"
                                             title={sm.title}
+                                            data-testid="socialmedia"
                                             className="btn btn-social btn-icon">
                                             <i className={`fa ${sm.icon}`}></i>
                                         </a>

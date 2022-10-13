@@ -18,7 +18,7 @@ export const About: FC<{ profile: IProfile }> = ({ profile }) => {
                                 <div className="h4 mt-0 title">Basic Information</div>
                                 <div className="row">
                                     <div className="col-sm-4"><strong className="text-uppercase">Age:</strong></div>
-                                    <div className="col-sm-8">{profile.age}</div>
+                                    <div className="col-sm-8" data-testid="age">{profile.age}</div>
                                 </div>
                                 <div className="row mt-3">
                                     <div className="col-sm-4"><strong className="text-uppercase">Email:</strong></div>
