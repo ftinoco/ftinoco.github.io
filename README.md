@@ -1,17 +1,17 @@
 # My Personal Portfolio built with React
 
-To view this code live visit: [https://ftinoco.github.io/](https://ftinoco.github.io/)
+To view this code live visit: [http://fernando-tinoco.com/](http://fernando-tinoco.com/)
  
 To send email from contact section, this site uses a service hosted on heroku, and based on python/flask ([Repo](https://github.com/ftinoco/flask_sender_email)).
 
 ### Upcoming Updates
-- [ ] Add unit testing. (working)
-- [ ] Deploy on a custom domain.  
+- [ ] Add unit testing. (in progress...)
+- [x] Deploy on a custom domain.  
 - [ ] Implement services to get portfolio information.
 - [ ] Add more records in projects section. 
 - [x] ~~Become contact form to react-hook-form.~~
 - [ ] Improve skill section (removing bar of percentage).
-- [ ] Update the look and feel. (working)
+- [ ] Update the look and feel. (in progress...)
 - [x] ~~Open education credentials in other tab.~~
 - [x] ~~Update experience section.~~
 - [x] ~~Fix behavior when showing less work experiences.~~
