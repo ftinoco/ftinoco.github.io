@@ -18,5 +18,10 @@
         "icon": "fa-telegram",
         "link": "https://t.me/ftinococ45",
         "title": "Connect with me on Telegram"
+    },
+    {
+        "icon": "fa-twitter",
+        "link": "https://twitter.com/fertc45",
+        "title": "Follow me on Twitter"
     }
 ]
