@@ -25,9 +25,9 @@ export const ContactInfo = () => {
                 <div className="h6">Email</div>
                 <div className="email">
                     <i className="fa fa-envelope"></i>
-                    <p data-testid="email">
+                    <a href="mailto:ftinococ.45@gmail.com" data-testid="email">
                         ftinococ.45@gmail.com <br /> 
-                    </p>
+                    </a>
                 </div>
             </div>  
             </div>  
