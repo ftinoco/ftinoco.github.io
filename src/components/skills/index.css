@@ -1,5 +1,11 @@
+  #skill p {
+      text-align: justify;
+  }
+
   .progress-container {
       position: relative;
+      text-align: center;
+      margin: 15px;
   }
 
   .progress-container+.progress-container,
@@ -9,7 +15,7 @@
 
   .progress-container .progress-badge {
       color: #888;
-      font-size: 0.8571em;
+      font-size: 0.6571em;
       text-transform: uppercase;
   }
 
@@ -132,4 +138,16 @@
 
   .progress-container .aos-animate {
       transform: scaleX(1);
+  }
+
+  .skill-svg svg {
+      width: 60px !important;
+      height: 60px !important;
+  }
+
+  @media screen and (max-width: 768px) { 
+    .skill-svg svg {
+        width: 40px !important;
+        height: 40px !important;
+    }
   }
