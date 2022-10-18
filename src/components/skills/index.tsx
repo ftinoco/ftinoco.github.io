@@ -3,48 +3,45 @@ import { getSkillData$, skillData$ } from "../../services/skill-service";
 import { ISkill } from "./interfaces";
 
 import './index.css'
+import DOMPurify from "dompurify";
 
 export const Skill = () => {
     const skills = useObservableState<ISkill[]>(skillData$, []);
     useSubscription(getSkillData$, (s) => { skillData$.next(s) });
 
+    /**
+     * Sanitizing the html description
+     * @param item IEducation object
+     * @returns Object as parameter for dangerouslySetInnerHTML method
+     * @see https://blog.logrocket.com/using-dangerouslysetinnerhtml-in-a-react-application/
+     */
+    const sanitizedData = (item: ISkill) => {
+        let html = item.icon;
+        return { __html: DOMPurify.sanitize(html) }
+    }
+
     return (
         <div className="section" id="skill">
             <div className="container">
-                <div className="h4 text-center mb-4 title">Professional Skills</div>
+                <div className="h4 text-center mb-4 title">Technical Skills</div>
                 <div className="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <div className="card-body">
-                        {skills.map((skill, idx, $skills) =>
-                        (
-                            ((idx % 2) === 0) &&
-                            <div key={idx} className="row">
-                                <div className="col-md-6">
-                                    <div className="progress-container progress-primary">
-                                        <span className="progress-badge">{skill.name}</span>
-                                        <div className="progress">
-                                            <div className="progress-bar progress-bar-primary" data-aos="progress-full"
-                                                data-aos-offset="10" data-aos-duration="2000" role="progressbar"
-                                                aria-valuenow={skill.percentage} aria-valuemin={0} aria-valuemax={100}
-                                                style={{ width: `${skill.percentage}%` }}></div>
-                                            <span className="progress-value">{skill.percentage}%</span>
+                        <div className="row"> 
+                            <div className="col-md-12">
+                                <div className="row">
+                                    {skills.map((skill, idx) =>
+                                    (
+                                        <div key={idx} className="col-lg-3 col-md-2 col-sm-5">
+                                            <div className="progress-container progress-primary">
+                                                <div className="skill-svg" dangerouslySetInnerHTML={sanitizedData(skill)} />
+                                                <span className="progress-badge">{skill.name}</span> 
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6">
-                                    <div className="progress-container progress-primary">
-                                        <span className="progress-badge">{$skills[idx + 1].name}</span>
-                                        <div className="progress">
-                                            <div className="progress-bar progress-bar-primary" data-aos="progress-full"
-                                                data-aos-offset="10" data-aos-duration="2000" role="progressbar"
-                                                aria-valuenow={$skills[idx + 1].percentage} aria-valuemin={0} aria-valuemax={100}
-                                                style={{ width: `${$skills[idx + 1].percentage}%` }}></div>
-                                            <span className="progress-value">{$skills[idx + 1].percentage}%</span>
-                                        </div>
-                                    </div>
+                                    )
+                                    )}
                                 </div>
                             </div>
-                        )
-                        )}
+                        </div>
                     </div>
                 </div>
             </div>
