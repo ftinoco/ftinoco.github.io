@@ -1,7 +1,7 @@
 import { useObservableState, useSubscription } from "observable-hooks";
 import { educationData$, getEducationData$ } from "../../services/education-service";
 import { IEducation } from "./interface";
-import DOMPurify from 'dompurify'
+import * as Utils from '../../utils';
 
 import './index.css';
 
@@ -11,17 +11,6 @@ export const Education = () => {
         educationData$, []
     );
     useSubscription(getEducationData$, (e) => { educationData$.next(e) });
-
-    /**
-     * Sanitizing the html description
-     * @param item IEducation object
-     * @returns Object as parameter for dangerouslySetInnerHTML method
-     * @see https://blog.logrocket.com/using-dangerouslysetinnerhtml-in-a-react-application/
-     */
-    const sanitizedData = (item: IEducation) => {
-        let html = item.description;
-        return { __html: DOMPurify.sanitize(html) }
-    }
 
     return (
         <div className="section">
@@ -49,7 +38,7 @@ export const Education = () => {
                                         role="education-institution">
                                         {item.institution}
                                     </p>
-                                    <div dangerouslySetInnerHTML={sanitizedData(item)} />
+                                    <div dangerouslySetInnerHTML={Utils.sanitizedData(item, 'description')} />
                                     {item.credentials &&
                                         <p>
                                             <a href={item.credentials} target="_blank" rel="noreferrer">See credetials</a>
