@@ -110,14 +110,17 @@ export const defaultValues: IPortfolio = {
     skills: [
         {
             name: "ASP.NET / ASP.NET CORE",
+            icon: "",
             percentage: 80
         },
         {
             name: "Azure DevOps",
+            icon: "",
             percentage: 60
         },
         {
             name: "React",
+            icon: "",
             percentage: 40
         }
     ],

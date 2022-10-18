@@ -17,7 +17,7 @@ describe('<Profile/>', () => {
             socialMedias={profileProps.socialMedias} />);
 
         expect(screen.getByTestId('fullname-title')).toBeInTheDocument();
-        expect(screen.getByTestId('socialmedia')).toBeInTheDocument();
+        expect(screen.getAllByTestId('socialmedia')).toHaveLength(2);
         expect(screen.getByTestId('age')).toHaveTextContent('30');
     });
 });
