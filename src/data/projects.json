@@ -7,10 +7,10 @@
         "url": "https://github.com/ftinoco/flask_sender_email"
     },
     {
-        "img": "images/project-4.jpg",
-        "title": ".NET Core Utils Project",
-        "role": "Class Library Package",
-        "url": "https://www.nuget.org/packages/NetCoreCommon/"
+        "title": "My Portfolio",
+        "img": "images/project-6.jpg",
+        "role": "Web Development",
+        "url": "https://github.com/ftinoco/ftinoco.github.io"
     },
     {
         "title": "Accounts Payable and Billing System",
@@ -23,5 +23,11 @@
         "img": "images/project-1.jpg",
         "role": "Web Development",
         "url": "#portfolio"
+    },
+    {
+        "img": "images/project-4.jpg",
+        "title": ".NET Core Utils Project",
+        "role": "Class Library Package",
+        "url": "https://www.nuget.org/packages/NetCoreCommon/"
     }
 ]
