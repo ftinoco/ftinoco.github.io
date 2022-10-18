@@ -22,7 +22,11 @@ export const About: FC<{ profile: IProfile }> = ({ profile }) => {
                                 </div>
                                 <div className="row mt-3">
                                     <div className="col-sm-4"><strong className="text-uppercase">Email:</strong></div>
-                                    <div className="col-sm-8"><a href={profile.emails.main}>{profile.emails.main}</a></div>
+                                    <div className="col-sm-8">
+                                        <a href={"mailto:" + profile.emails.main}>
+                                            {profile.emails.main}
+                                        </a>
+                                    </div>
                                 </div>
                                 <div className="row mt-3">
                                     <div className="col-sm-4"><strong className="text-uppercase">Phone:</strong></div>

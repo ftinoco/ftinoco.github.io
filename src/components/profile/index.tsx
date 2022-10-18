@@ -38,14 +38,12 @@ export const Profile: FC<IProfileProps> = ({ fullName, profile, socialMedias }) 
                                     )}
                                 </div>
                             </div>
-                        </div> 
-                        <div className="container">
                             <div className="cc-profile-image">
                                 <a href="#">
                                     <img src={profile.profileImage} alt={fullName} />
                                 </a>
                             </div>
-                        </div>
+                        </div>  
                     </div>
                 </div>
             </div>
