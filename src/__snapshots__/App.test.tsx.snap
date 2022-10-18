@@ -143,6 +143,7 @@ exports[`renders learn react link 1`] = `
                 </h1>
                 <div
                   class="h1 title"
+                  data-testid="fullname-title"
                 >
                   Fernando Tinoco
                 </div>
@@ -156,6 +157,7 @@ exports[`renders learn react link 1`] = `
                 >
                   <a
                     class="btn btn-social btn-icon"
+                    data-testid="socialmedia"
                     href="https://www.linkedin.com/in/ftinococ45"
                     rel="noreferrer"
                     target="_blank"
@@ -167,6 +169,7 @@ exports[`renders learn react link 1`] = `
                   </a>
                   <a
                     class="btn btn-social btn-icon"
+                    data-testid="socialmedia"
                     href="https://github.com/ftinoco"
                     rel="noreferrer"
                     target="_blank"
@@ -178,6 +181,7 @@ exports[`renders learn react link 1`] = `
                   </a>
                   <a
                     class="btn btn-social btn-icon"
+                    data-testid="socialmedia"
                     href="skype:ftinococ.45"
                     rel="noreferrer"
                     target="_blank"
@@ -189,6 +193,7 @@ exports[`renders learn react link 1`] = `
                   </a>
                   <a
                     class="btn btn-social btn-icon"
+                    data-testid="socialmedia"
                     href="https://t.me/ftinococ45"
                     rel="noreferrer"
                     target="_blank"
@@ -200,6 +205,7 @@ exports[`renders learn react link 1`] = `
                   </a>
                   <a
                     class="btn btn-social btn-icon"
+                    data-testid="socialmedia"
                     href="https://twitter.com/fertc45"
                     rel="noreferrer"
                     target="_blank"
@@ -292,6 +298,7 @@ exports[`renders learn react link 1`] = `
                     </div>
                     <div
                       class="col-sm-8"
+                      data-testid="age"
                     >
                       30
                     </div>
@@ -1358,6 +1365,7 @@ exports[`renders learn react link 1`] = `
         >
           <div
             class="h4 text-center mb-4 title"
+            data-testid="education-title"
           >
             Education
           </div>
@@ -1402,6 +1410,7 @@ exports[`renders learn react link 1`] = `
                   </div>
                   <p
                     class="category"
+                    role="education-institution"
                   >
                     Microsoft
                   </p>
@@ -1476,6 +1485,7 @@ exports[`renders learn react link 1`] = `
                   </div>
                   <p
                     class="category"
+                    role="education-institution"
                   >
                     Universidad Nacional de Ingeniería
                   </p>
