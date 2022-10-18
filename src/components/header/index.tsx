@@ -1,13 +1,12 @@
 import { FC, useEffect, useState } from "react";
+import * as Utils from '../../utils';
 
 export const Header: FC<{ fullName: string }> = ({ fullName }) => {
 
     const [section, setSection] = useState('');
 
     const scrollTo = (ev: React.MouseEvent<HTMLAnchorElement, MouseEvent>) =>{
-        ev.preventDefault();
-        const href = (ev.target as HTMLAnchorElement).getAttribute('href'); 
-        if(href) setSection(href.replace('#', ''))
+        Utils.scrollTo(ev, setSection);
     }
 
     useEffect(() => {
