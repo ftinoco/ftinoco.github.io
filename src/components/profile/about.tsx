@@ -37,13 +37,21 @@ export const About: FC<{ profile: IProfile }> = ({ profile }) => {
                                     <div className="col-sm-8">
                                         {
                                             profile.languages.map((lan, idx) =>
-                                                <span key={idx} 
-                                                    style={{marginBottom:"10px", display:'block'}}>
+                                                <span key={idx}
+                                                    style={{ marginBottom: "10px", display: 'block' }}>
                                                     {lan.name} - {lan.level}
                                                 </span>
                                             )
                                         }
                                     </div>
+                                </div>
+                                <div className="row mt-3">
+                                    <a className="btn btn-primary smooth-scroll mr-2"
+                                        href="#contact"
+                                        data-aos="zoom-in"
+                                        data-aos-anchor="data-aos-anchor">
+                                        Hire Me
+                                    </a>
                                 </div>
                             </div>
                         </div>
