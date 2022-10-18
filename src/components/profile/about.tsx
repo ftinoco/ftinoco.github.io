@@ -1,7 +1,17 @@
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 import { IProfile } from "./interfaces";
+import * as Utils from '../../utils';
 
 export const About: FC<{ profile: IProfile }> = ({ profile }) => {
+    const [section, setSection] = useState('');
+
+    useEffect(() => {
+        window.scrollTo({
+            top: document.getElementById(section)?.offsetTop,
+            behavior: 'smooth',
+        });
+    }, [section]);
+
     return (
         <div className="section" id="about">
             <div className="container">
@@ -11,6 +21,10 @@ export const About: FC<{ profile: IProfile }> = ({ profile }) => {
                             <div className="card-body">
                                 <div className="h4 mt-0 title">About</div>
                                 {profile.about.map((txt, idx) => <p key={idx}>{txt.description}</p>)}
+                                <div className="row mt-3">
+                                    <a className="btn btn-primary" href="/Resume.pdf" target="_blank" data-aos="zoom-in"
+                                        data-aos-anchor="data-aos-anchor">Download CV</a>
+                                </div>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12">
@@ -52,6 +66,7 @@ export const About: FC<{ profile: IProfile }> = ({ profile }) => {
                                 <div className="row mt-3">
                                     <a className="btn btn-primary smooth-scroll mr-2"
                                         href="#contact"
+                                        onClick={(ev) => Utils.scrollTo(ev, setSection)}
                                         data-aos="zoom-in"
                                         data-aos-anchor="data-aos-anchor">
                                         Hire Me
