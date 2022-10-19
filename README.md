@@ -11,7 +11,7 @@ To send email from contact section, this site uses a service hosted on heroku, a
 - [ ] Add more records in projects section. 
 - [x] ~~Become contact form to react-hook-form.~~
 - [x] ~~Improve skill section (removing bar of percentage).~~
-- [ ] Update the look and feel. (in progress...)
+- [x] ~~Update the look and feel.~~
 - [x] ~~Open education credentials in other tab.~~
 - [x] ~~Update experience section.~~
 - [x] ~~Fix behavior when showing less work experiences.~~
