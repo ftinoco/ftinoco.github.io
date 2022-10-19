@@ -41,7 +41,7 @@
       -moz-box-shadow: 0 0 12px rgba(255, 255, 255, .6);
       box-shadow: 0 0 12px rgb(255 255 255 / 60%);
   }
-  
+
   .btn-social:hover::before {
       -webkit-transform: scale(1.4);
       -moz-transform: scale(1.4);
@@ -49,7 +49,7 @@
       -o-transform: scale(1.4);
       transform: scale(1.4);
       opacity: 0;
-      filter: alpha(opacity=0); 
+      filter: alpha(opacity=0);
       -moz-transition: .4s;
       -o-transition: .4s;
       transition: .4s;
@@ -127,4 +127,17 @@
   .cc-profile-image a:hover:before {
       -webkit-animation: none;
       animation: none;
+  }
+
+  .btn-interest {
+      margin: 5px;
+      width: 50px !important;
+      height: 50px !important;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      cursor: auto;
+  } 
+  .btn-interest + span {
+    display: block; 
   }
