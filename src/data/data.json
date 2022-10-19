@@ -22,16 +22,19 @@
     ],
     "about": [
         {
-            "description": "Hi there!"
+            "description": "Hello! I am Fernando and I am a Software Developer, Programming Analyst and .NET specialist from Managua, Nicaragua."
         },
         {
-            "description": "I am a Nicaraguan that love enjoying a good coffee, watching movies, series and anime. I love my country and I hope one day to know it completely."
+            "description": "Even though I started building applications in my twenties, I quickly became passionate about the world of programming and have never stopped since, because I found my greatest passion in building things that solve problems."
         },
         {
-            "description": "About my technical skills, I would say that I am a tech enthusiast, I am always looking for what to learn. I have worked on many platforms and programming languages, but my strong point is web develop and .NET technologies, I have been part of both back-end and front-end. I am currently focused on learning Python and ReactJS."
+            "description": "Even before graduating University with a bachelor's degree, I began working as a developer, creating web applications for small businesses and as an intern for local companies, using .NET tools like C#, VB.NET, ASP.NET and SQL Server as a database manager."
         },
         {
-            "description": "I have always thought that if you do what you like the most, you will never work."
+            "description": "Throughout my career, I have been working with many stacks for both back-end and front-end, I could say that the .NET platform is my forte but in the last year I have been focused on learning and building frontend application using React and Typescript."
+        },
+        {
+            "description": "Take a look at my portfolio below to see what I am working on, and get in touch if you'd like to work together!"
         }
     ],
     "profileImage":"images/profile.jpg"

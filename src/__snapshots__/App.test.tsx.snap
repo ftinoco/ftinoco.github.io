@@ -271,6 +271,19 @@ exports[`renders learn react link 1`] = `
                   <p>
                     I have always thought that if you do what you like the most, you will never work.
                   </p>
+                  <div
+                    class="row mt-3"
+                  >
+                    <a
+                      class="btn btn-primary aos-init aos-animate"
+                      data-aos="zoom-in"
+                      data-aos-anchor="data-aos-anchor"
+                      href="/Resume.pdf"
+                      target="_blank"
+                    >
+                      Download CV
+                    </a>
+                  </div>
                 </div>
               </div>
               <div
@@ -387,6 +400,18 @@ exports[`renders learn react link 1`] = `
                         English - B2
                       </span>
                     </div>
+                  </div>
+                  <div
+                    class="row mt-3"
+                  >
+                    <a
+                      class="btn btn-primary smooth-scroll mr-2 aos-init aos-animate"
+                      data-aos="zoom-in"
+                      data-aos-anchor="data-aos-anchor"
+                      href="#contact"
+                    >
+                      Hire Me
+                    </a>
                   </div>
                 </div>
               </div>
