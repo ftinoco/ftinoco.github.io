@@ -1,6 +1,6 @@
 # My Personal Portfolio built with React
 
-To view this code live visit: [fernando-tinoco.com](http://fernando-tinoco.com/)
+To view this code live visit: [https://ftinoco.github.io/](https://ftinoco.github.io/)
  
 To send email from contact section, this site uses a service hosted on heroku, and based on python/flask ([Repo](https://github.com/ftinoco/flask_sender_email)).
 
